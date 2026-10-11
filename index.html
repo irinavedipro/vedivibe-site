@@ -30,6 +30,9 @@
     @media(min-width:1051px){.hero-copy{grid-template-columns:minmax(0,1fr) minmax(340px,410px);gap:clamp(30px,4vw,64px)}h1{font-size:clamp(70px,6.3vw,102px)}}
     @media(min-width:801px) and (max-width:1050px){.hero-copy{grid-template-columns:minmax(0,1fr) minmax(275px,315px)}}
     @media(max-width:700px){.hero-portrait{width:100%;max-width:420px;aspect-ratio:5/4}}
+    /* На телефоне раньше показываем портрет, сохраняя крупный заголовок. */
+    @media(max-width:700px){.hero{padding-top:38px}.hero .eyebrow{margin-bottom:20px}.hero-aside{margin-top:24px}.brand,.nav .nav-contact,.text-link{min-height:44px;display:inline-flex;align-items:center}}
+    @media(max-width:420px){h1{font-size:clamp(42px,11vw,47px);line-height:.95}}
   </style>
 </head>
 <body>
