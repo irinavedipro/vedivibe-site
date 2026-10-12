@@ -98,6 +98,86 @@
     @media(max-width:900px){.case-heading{grid-template-columns:36px minmax(0,1fr) 24px;gap:18px}.case-short{grid-column:2;grid-row:2}.case-plus{grid-column:3;grid-row:1}.case-body{padding-left:54px}}
     @media(max-width:700px){.hero-thesis{font-size:21px}.hero-services{font-size:16px;margin-top:17px}.hero-principle{font-size:13px;margin-top:12px}.case-heading{padding:26px 0;gap:12px;grid-template-columns:30px minmax(0,1fr) 22px}.case-name{font-size:30px}.case-short{font-size:14px}.case-body{padding:0 0 33px 42px}.case-gallery{grid-template-columns:1fr;gap:20px}.case-shot--phone{max-width:275px}.case-quote{font-size:23px}}
     @media(max-width:420px){.hero-thesis{font-size:19px;line-height:1.3}.case-name{font-size:27px}.case-body{padding-left:0}.case-short{font-size:14px}.case-heading{gap:10px}}
+
+    /* Site UX 2026-10-12: visual project carousel, customer voices carousel,
+       native accessible modal, mobile progressive disclosure. Original brand
+       palette, typography, portrait, and desktop first-screen composition kept. */
+    .mobile-approach-context{display:none}
+    .carousel-shell{margin-top:-15px;margin-bottom:28px}
+    .carousel-toolbar{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-bottom:18px}
+    .carousel-toolbar__count{font:600 11px/1.3 Arial,sans-serif;letter-spacing:.12em;color:#897067;margin-right:12px;min-width:54px;text-align:center}
+    .carousel-arrow{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border:1px solid #b69f93;background:transparent;color:#493b37;border-radius:50%;font:400 24px/1 Georgia,serif;transition:color .2s,background .2s,opacity .2s}
+    .carousel-arrow:hover:not(:disabled){color:#f6f0e9;background:#493b37}
+    .carousel-arrow:focus-visible{outline:3px solid #cf806e;outline-offset:3px}
+    .carousel-arrow:disabled{opacity:.33;cursor:default}
+    .carousel-track{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(265px,33vw,410px);gap:22px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 22px;scroll-padding-inline:2px}
+    .carousel-track::-webkit-scrollbar{display:none}
+    .carousel-track:focus-visible{outline:2px solid #b67466;outline-offset:3px}
+    .portfolio-card{scroll-snap-align:start;min-width:0;text-align:left;border:1px solid #cfbdb0;color:#352b2a;background:#f6f1e9;display:flex;flex-direction:column;cursor:pointer;padding:0;transition:box-shadow .25s,transform .25s,border-color .25s}
+    .portfolio-card:hover{transform:translateY(-3px);border-color:#b87a6d;box-shadow:0 16px 32px rgba(47,37,38,.13)}
+    .portfolio-card:focus-visible{outline:3px solid #bc7768;outline-offset:3px}
+    .portfolio-art{height:260px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;background:#d4c5b8}
+    .portfolio-art:after{content:"";position:absolute;inset:0;border-bottom:1px solid rgba(47,37,38,.08);pointer-events:none}
+    .portfolio-art img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .35s}
+    .portfolio-card:hover .portfolio-art img{transform:scale(1.025)}
+    .portfolio-art--mayak{background:#e4dfcf;padding:13px}
+    .portfolio-art--kids{background:#201c45;padding:10px}
+    .portfolio-art--kids img{width:auto;max-width:100%;border-radius:15px}
+    .portfolio-art--unit{background:radial-gradient(circle at 68% 35%,#41635e 0,#263e3d 64%);color:#f4efe5}
+    .portfolio-art--fire{background:radial-gradient(circle at 75% 30%,#b76c69 0,#653e49 49%,#392932 100%);color:#f9e6d5}
+    .portfolio-art--bk{background:linear-gradient(145deg,#c7c5ac,#e6dac6);color:#303c33}
+    .portfolio-art--clover{background:linear-gradient(135deg,#a7bdad,#d3d4c4);color:#293b31}
+    .portfolio-art--oscar{background:radial-gradient(circle at 60% 40%,#726563,#342a31 80%);color:#f0e7d8}
+    .portfolio-art--studio{background:linear-gradient(155deg,#e4a28b,#dcbead 64%,#e8d4bf);color:#352a33}
+    .portfolio-art__type{position:absolute;top:16px;left:18px;font:600 10px/1.4 Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;opacity:.77}
+    .portfolio-art__symbol{font:400 clamp(38px,5vw,68px)/1.03 Georgia,serif;letter-spacing:-.055em;max-width:90%;text-align:center;white-space:pre-line}
+    .portfolio-art__rule{position:absolute;width:60%;height:60%;border:1px solid currentColor;border-radius:50%;opacity:.14}
+    .portfolio-card__copy{flex:1;padding:24px 24px 26px;display:flex;flex-direction:column}
+    .portfolio-card__category{font:600 10px/1.5 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#9b6457}
+    .portfolio-card__title{margin:12px 0 13px;font:400 clamp(28px,2.8vw,39px)/1.08 Georgia,serif;letter-spacing:-.045em}
+    .portfolio-card__desc{margin:0;font-size:13px;line-height:1.6;color:#615752}
+    .portfolio-card__more{display:block;margin-top:auto;padding-top:22px;font:600 11px/1.4 Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#a45d51}
+    .portfolio-modal{width:min(1020px,calc(100% - 24px));max-height:min(90dvh,940px);border:1px solid #b79f8e;background:#f6f0e7;color:#34292a;padding:0;box-shadow:0 30px 100px rgba(30,22,22,.35)}
+    .portfolio-modal::backdrop{background:rgba(20,14,18,.73)}
+    .portfolio-modal__head{display:flex;align-items:start;justify-content:space-between;gap:28px;padding:28px clamp(18px,4vw,48px);border-bottom:1px solid #d0c0b5}
+    .portfolio-modal__name{font:400 clamp(35px,4.2vw,62px)/1.04 Georgia,serif;letter-spacing:-.045em;margin:5px 0 0}
+    .portfolio-modal__category{font:600 11px/1.5 Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#9c685c}
+    .portfolio-modal__close{border:1px solid #b69f93;background:transparent;color:#392e2c;border-radius:50%;font:400 27px/1 Arial,sans-serif;width:44px;height:44px;cursor:pointer;flex:none}
+    .portfolio-modal__close:focus-visible{outline:3px solid #b67669;outline-offset:3px}
+    .portfolio-modal__body{padding:26px clamp(18px,4vw,48px) 42px}
+    .portfolio-modal .case-body{max-width:none;padding:0}
+    .portfolio-modal .case-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .portfolio-modal .case-shot--phone{max-width:300px}
+    .portfolio-modal .case-text{max-width:750px}
+    .voices .carousel-shell{margin-top:0;margin-bottom:0}
+    .voices .carousel-toolbar__count{color:#76635b}
+    .review-carousel{grid-auto-columns:clamp(300px,45vw,600px)}
+    .review-carousel .voice{scroll-snap-align:start;display:flex;min-height:290px;margin:0;padding:30px 28px;border:1px solid #baa89c;background:#e8dfd5}
+    .review-carousel .voice+.voice{border-left:1px solid #baa89c;padding-left:28px}
+    .review-carousel .voice blockquote{font:400 clamp(21px,2.2vw,31px)/1.25 Georgia,serif;letter-spacing:-.02em}
+    .review-carousel .voice figcaption{font-size:11px;letter-spacing:.09em}
+    .case-list[hidden],.voice-feature[hidden],.voice-grid[hidden]{display:none!important}
+    @media(max-width:700px){
+      .hero{padding-top:18px;min-height:unset}
+      .hero-aside{margin-top:18px}
+      .hero-portrait{margin-bottom:13px}
+      .hero-actions{gap:12px}
+      .hero-services,.hero-principle{display:none}
+      .mobile-approach-context{display:block;margin:0 0 26px}
+      .mobile-approach-context p{margin:0 0 13px;font-size:16px;line-height:1.55}
+      .carousel-track{grid-auto-columns:minmax(0,86%);gap:14px;padding-bottom:16px}
+      .carousel-toolbar{margin-bottom:14px}
+      .portfolio-art{height:230px}
+      .portfolio-card__copy{padding:21px 19px 24px}
+      .portfolio-modal{width:calc(100% - 14px);max-height:92dvh}
+      .portfolio-modal__head{padding:20px}
+      .portfolio-modal__body{padding:23px 20px 34px}
+      .portfolio-modal .case-gallery{grid-template-columns:1fr}
+      .review-carousel .voice{min-height:260px;padding:26px 22px}
+      .review-carousel .voice+.voice{padding-left:22px}
+    }
+    @media(max-width:420px){.hero{padding-top:15px}.hero-aside{margin-top:15px}.hero-portrait{margin-bottom:12px}.hero-actions .button{min-width:0;width:100%}}
+
   </style>
 </head>
 <body>
@@ -111,7 +191,6 @@
         <div class="hero">
           <div class="hero-copy">
             <div>
-              <p class="eyebrow">Авторская практика</p>
               <h1><span class="line">Ирина</span><span class="line"><em>Вединеева.</em></span></h1>
               <p class="hero-role">Архитектор цифровых систем</p>
               <p class="hero-thesis">Соединяю ваш опыт с возможностями ии и превращаю идеи в работающие цифровые системы.</p>
@@ -129,7 +208,7 @@
 
     <section class="bridge" id="approach">
       <p class="eyebrow">01 / Мой способ работы</p>
-      <div><h2>Система, которая<br><em>остаётся вашей.</em></h2><p>Я начинаю с вашего опыта, идей и задач: разрабатываю концепцию, продумываю архитектуру и объединяю цифровые инструменты в работающую систему. Мне важно, чтобы она была красивой, удобной и понятной — и чтобы после завершения нашей работы вы могли самостоятельно ею управлять и развивать дальше, без постоянной зависимости от разработчика.</p></div>
+      <div><h2>Система, которая<br><em>остаётся вашей.</em></h2><div class="mobile-approach-context"><p>Для экспертов и предпринимателей создаю платформы, приложения и ии-агентов.</p><p><strong>Мой подход — партнёрство человека с ии.</strong> От концепции до работающего решения.</p></div><p>Я начинаю с вашего опыта, идей и задач: разрабатываю концепцию, продумываю архитектуру и объединяю цифровые инструменты в работающую систему. Мне важно, чтобы она была красивой, удобной и понятной — и чтобы после завершения нашей работы вы могли самостоятельно ею управлять и развивать дальше, без постоянной зависимости от разработчика.</p></div>
     </section>
 
     <section class="proof" id="work">
@@ -183,12 +262,151 @@
       <figure class="voice-feature"><blockquote>«После твоего появления, у меня будто опора появилась! Спасибо тебе!»</blockquote><figcaption>Кристина · отзыв во время работы над визуальной системой</figcaption></figure>
       <div class="voice-grid">
         <figure class="voice"><blockquote>«Я уже использовала приложение в нетворкинге и хочу сказать, что это вызывает большой интерес и вовлекает гораздо лучше».</blockquote><figcaption>Заказчица приложения для эксперта · письменный отзыв</figcaption></figure>
-        <figure class="voice"><blockquote>«Для меня эта система, которую сейчас ты собрала, она максимально прозрачная. То есть вообще ничего лишнего, всё чётенько, спокойно, никаких лишних наворотов».</blockquote><figcaption>Елена · заказчица цифровой платформы</figcaption></figure>
+        <figure class="voice"><blockquote>«То есть для меня эта система, которую сейчас ты собрала, она максимально прозрачная.»</blockquote><figcaption>Лена · заказчица цифровой платформы «Маяк»</figcaption></figure>
+        <figure class="voice"><blockquote>«Я сама на своём телефоне создала нужную автоматизацию и теперь смогу это делать сама».</blockquote><figcaption>Наталья · эксперт, настройка автоматизации</figcaption></figure>
       </div>
     </section>
 
     <section class="route" id="contact"><div class="route-main"><p class="eyebrow">04 / Сотрудничество</p><h2>Расскажите, что<br>вы создаёте.</h2><div class="route-details"><p>Я работаю с авторами и командами, которым нужен партнёр от концепции до воплощения продукта или цифровой среды. Напишите, что вы создаёте и на каком этапе находится проект. Обсудим масштаб и формат совместной работы.</p><a class="button" href="https://t.me/vedi_irina" target="_blank" rel="noopener noreferrer">Написать о проекте</a><span class="route-hint">Откроется Telegram</span></div></div></section>
   </main>
   <footer><span>© Веди Вайб · Ирина Вединеева</span><span class="review">Авторская практика · концепции и цифровые системы</span></footer>
+  <script>
+  (() => {
+    "use strict";
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const projects = [...document.querySelectorAll(".case-list > .case")];
+    const fallback = document.querySelector(".case-list");
+    const proof = document.getElementById("work");
+    const reviewsSection = document.getElementById("voices");
+    if (!projects.length || !fallback || !proof || !reviewsSection) return;
+    const media = [
+      {kind:"mayak",image:"assets/cases/mayak/dashboard-desktop.png",tag:"Цифровая среда развития"},
+      {kind:"unit",symbol:"CPL / CAC",tag:"Бизнес-калькулятор"},
+      {kind:"fire",symbol:"Fire of\nLife",tag:"Лид-магнит"},
+      {kind:"bk",symbol:"БК\nГлавбух",tag:"Цифровые инструменты"},
+      {kind:"clover",symbol:"Clover\nVoice",tag:"Концепция + воронка"},
+      {kind:"kids",image:"assets/cases/veselye-znaniya/cover.jpg",tag:"Для детей"},
+      {kind:"oscar",symbol:"Oskar.",tag:"ии-агент"},
+      {kind:"studio",symbol:"Студия\nкаруселей",tag:"Визуальный редактор"}
+    ];
+    function makeSlider(items,className,createCard,ariaLabel) {
+      const shell=document.createElement("div");
+      shell.className="carousel-shell";
+      const toolbar=document.createElement("div");
+      toolbar.className="carousel-toolbar";
+      const count=document.createElement("span");
+      count.className="carousel-toolbar__count";
+      count.setAttribute("aria-live","off");
+      const prev=document.createElement("button"),next=document.createElement("button");
+      for(const [btn,label,symbol] of [[prev,"Назад","‹"],[next,"Вперёд","›"]]){
+        btn.type="button";btn.className="carousel-arrow";btn.textContent=symbol;btn.setAttribute("aria-label",label);
+      }
+      toolbar.append(count,prev,next);
+      const track=document.createElement("div");
+      track.className="carousel-track "+className;
+      track.setAttribute("role","region");
+      track.setAttribute("aria-label",ariaLabel);
+      track.setAttribute("tabindex","0");
+      items.forEach((item,i)=>track.append(createCard(item,i)));
+      function update(){
+        const cards=[...track.children];
+        if(!cards.length)return;
+        const left=track.scrollLeft;
+        let nearest=0,dist=Infinity;
+        cards.forEach((card,i)=>{const d=Math.abs(card.offsetLeft-cards[0].offsetLeft-left);if(d<dist){dist=d;nearest=i;}});
+        count.textContent=String(nearest+1).padStart(2,"0")+" / "+String(cards.length).padStart(2,"0");
+        prev.disabled=left<8;
+        next.disabled=left>=track.scrollWidth-track.clientWidth-8;
+      }
+      function move(dir){
+        const first=track.firstElementChild;
+        if(!first)return;
+        const gap=parseFloat(getComputedStyle(track).columnGap)||0;
+        track.scrollBy({left:dir*(first.getBoundingClientRect().width+gap),behavior:reducedMotion.matches?"auto":"smooth"});
+      }
+      prev.addEventListener("click",()=>move(-1));
+      next.addEventListener("click",()=>move(1));
+      track.addEventListener("keydown",e=>{if(e.target===track && ["ArrowRight","ArrowLeft"].includes(e.key)){e.preventDefault();move(e.key==="ArrowRight"?1:-1);}});
+      track.addEventListener("scroll",update,{passive:true});
+      window.addEventListener("resize",update,{passive:true});
+      shell.append(toolbar,track);
+      requestAnimationFrame(update);
+      return shell;
+    }
+    const dialog=document.createElement("dialog");
+    dialog.className="portfolio-modal";
+    dialog.setAttribute("aria-labelledby","portfolio-modal-name");
+    dialog.innerHTML='<div class="portfolio-modal__head"><div><span class="portfolio-modal__category" id="portfolio-modal-category"></span><h3 class="portfolio-modal__name" id="portfolio-modal-name"></h3></div><button type="button" class="portfolio-modal__close" aria-label="Закрыть описание проекта">×</button></div><div class="portfolio-modal__body" id="portfolio-modal-body"></div>';
+    document.body.append(dialog);
+    const close=dialog.querySelector(".portfolio-modal__close");
+    const title=dialog.querySelector("#portfolio-modal-name");
+    const category=dialog.querySelector("#portfolio-modal-category");
+    const content=dialog.querySelector("#portfolio-modal-body");
+    let returnFocus=null;
+    function openProject(project,trigger){
+      returnFocus=trigger;
+      title.textContent=project.querySelector(".case-name")?.textContent||"Проект";
+      category.textContent=project.querySelector(".case-type")?.textContent||"";
+      content.replaceChildren(project.querySelector(".case-body").cloneNode(true));
+      dialog.showModal();
+      dialog.scrollTop=0;
+      close.focus();
+    }
+    close.addEventListener("click",()=>dialog.close());
+    dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close();});
+    dialog.addEventListener("close",()=>{if(returnFocus?.isConnected)returnFocus.focus();});
+    function projectCard(project,i){
+      const cover=media[i]||{kind:"studio",symbol:"Проект",tag:"Цифровая система"};
+      const button=document.createElement("button");
+      button.className="portfolio-card";button.type="button";
+      button.setAttribute("aria-haspopup","dialog");
+      button.setAttribute("aria-label","Подробнее о проекте «"+(project.querySelector(".case-name")?.textContent||"Проект")+"»");
+      const art=document.createElement("div");
+      art.className="portfolio-art portfolio-art--"+cover.kind;
+      const badge=document.createElement("span");
+      badge.className="portfolio-art__type";badge.textContent=cover.tag;
+      art.append(badge);
+      if(cover.image){
+        const img=document.createElement("img");
+        img.src=cover.image;
+        img.alt="Интерфейс проекта «"+(project.querySelector(".case-name")?.textContent||"Проект")+"»";
+        img.loading=i<2?"eager":"lazy";img.decoding="async";
+        art.append(img);
+      }else{
+        const ellipse=document.createElement("span"),symbol=document.createElement("span");
+        ellipse.className="portfolio-art__rule";ellipse.setAttribute("aria-hidden","true");
+        symbol.className="portfolio-art__symbol";symbol.textContent=cover.symbol;
+        art.append(ellipse,symbol);
+      }
+      const copy=document.createElement("div");
+      copy.className="portfolio-card__copy";
+      const tag=document.createElement("span"),heading=document.createElement("span"),description=document.createElement("p"),link=document.createElement("span");
+      tag.className="portfolio-card__category";tag.textContent=cover.tag;
+      heading.className="portfolio-card__title";heading.textContent=project.querySelector(".case-name")?.textContent||"Проект";
+      description.className="portfolio-card__desc";description.textContent=project.querySelector(".case-short")?.textContent||"";
+      link.className="portfolio-card__more";link.textContent="Смотреть кейс ↗";
+      copy.append(tag,heading,description,link);button.append(art,copy);
+      button.addEventListener("click",()=>openProject(project,button));
+      return button;
+    }
+    const projectSlider=makeSlider(projects,"portfolio-carousel",projectCard,"Листайте избранные проекты. Выберите карточку, чтобы открыть подробности.");
+    proof.querySelector(".proof-head").after(projectSlider);
+    fallback.hidden=true;
+    const feature=reviewsSection.querySelector(".voice-feature");
+    const grid=reviewsSection.querySelector(".voice-grid");
+    const originalVoices=[feature,...grid.querySelectorAll(".voice")];
+    function testimonialCard(figure){
+      const card=document.createElement("figure");
+      card.className="voice";
+      const quote=figure.querySelector("blockquote")?.cloneNode(true);
+      const caption=figure.querySelector("figcaption")?.cloneNode(true);
+      if(quote)card.append(quote);if(caption)card.append(caption);
+      return card;
+    }
+    const voicesSlider=makeSlider(originalVoices,"review-carousel",testimonialCard,"Листайте отзывы заказчиков");
+    reviewsSection.querySelector(".voices-head").after(voicesSlider);
+    feature.hidden=true;grid.hidden=true;
+  })();
+  </script>
 </body>
 </html>
