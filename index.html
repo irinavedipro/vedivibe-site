@@ -110,10 +110,10 @@
     .carousel-arrow:hover:not(:disabled){color:#f6f0e9;background:#493b37}
     .carousel-arrow:focus-visible{outline:3px solid #cf806e;outline-offset:3px}
     .carousel-arrow:disabled{opacity:.33;cursor:default}
-    .carousel-track{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(265px,33vw,410px);gap:22px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 22px;scroll-padding-inline:2px}
+    .carousel-track{display:flex;gap:22px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 22px;scroll-padding-inline:2px}
     .carousel-track::-webkit-scrollbar{display:none}
     .carousel-track:focus-visible{outline:2px solid #b67466;outline-offset:3px}
-    .portfolio-card{scroll-snap-align:start;min-width:0;text-align:left;border:1px solid #cfbdb0;color:#352b2a;background:#f6f1e9;display:flex;flex-direction:column;cursor:pointer;padding:0;transition:box-shadow .25s,transform .25s,border-color .25s}
+    .portfolio-card{flex:0 0 clamp(265px,33vw,410px);scroll-snap-align:start;min-width:0;text-align:left;border:1px solid #cfbdb0;color:#352b2a;background:#f6f1e9;display:flex;flex-direction:column;cursor:pointer;padding:0;transition:box-shadow .25s,transform .25s,border-color .25s}
     .portfolio-card:hover{transform:translateY(-3px);border-color:#b87a6d;box-shadow:0 16px 32px rgba(47,37,38,.13)}
     .portfolio-card:focus-visible{outline:3px solid #bc7768;outline-offset:3px}
     .portfolio-art{height:260px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;background:#d4c5b8}
@@ -151,7 +151,7 @@
     .portfolio-modal .case-text{max-width:750px}
     .voices .carousel-shell{margin-top:0;margin-bottom:0}
     .voices .carousel-toolbar__count{color:#76635b}
-    .review-carousel{grid-auto-columns:clamp(300px,45vw,600px)}
+    .review-carousel .voice{flex:0 0 clamp(300px,45vw,600px);min-width:0}
     .review-carousel .voice{scroll-snap-align:start;display:flex;min-height:290px;margin:0;padding:30px 28px;border:1px solid #baa89c;background:#e8dfd5}
     .review-carousel .voice+.voice{border-left:1px solid #baa89c;padding-left:28px}
     .review-carousel .voice blockquote{font:400 clamp(21px,2.2vw,31px)/1.25 Georgia,serif;letter-spacing:-.02em}
@@ -165,7 +165,7 @@
       .hero-services,.hero-principle{display:none}
       .mobile-approach-context{display:block;margin:0 0 26px}
       .mobile-approach-context p{margin:0 0 13px;font-size:16px;line-height:1.55}
-      .carousel-track{grid-auto-columns:minmax(0,86%);gap:14px;padding-bottom:16px}
+      .carousel-track{gap:14px;padding-bottom:16px}.carousel-track>.portfolio-card,.review-carousel>.voice{flex-basis:86%}
       .carousel-toolbar{margin-bottom:14px}
       .portfolio-art{height:230px}
       .portfolio-card__copy{padding:21px 19px 24px}
