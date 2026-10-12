@@ -114,7 +114,7 @@
     .carousel-track::-webkit-scrollbar{display:none}
     .carousel-track:focus-visible{outline:2px solid #b67466;outline-offset:3px}
     .portfolio-card{flex:0 0 clamp(265px,33vw,410px);scroll-snap-align:start;min-width:0;text-align:left;border:1px solid #cfbdb0;color:#352b2a;background:#f6f1e9;display:flex;flex-direction:column;cursor:pointer;padding:0;transition:box-shadow .25s,transform .25s,border-color .25s}
-    .portfolio-card:hover{transform:translateY(-3px);border-color:#b87a6d;box-shadow:0 16px 32px rgba(47,37,38,.13)}
+    @media(hover:hover) and (pointer:fine){.portfolio-card:hover{transform:translateY(-3px);border-color:#b87a6d;box-shadow:0 16px 32px rgba(47,37,38,.13)}}
     .portfolio-card:focus-visible{outline:3px solid #bc7768;outline-offset:3px}
     .portfolio-art{height:260px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;background:#d4c5b8}
     .portfolio-art:after{content:"";position:absolute;inset:0;border-bottom:1px solid rgba(47,37,38,.08);pointer-events:none}
@@ -182,7 +182,6 @@
     /* Тихая типографическая витрина; фирменные палитра и шрифты сохранены. */
     .portfolio-card{min-height:315px;background:#f6f1e9}
     .portfolio-card__copy{position:relative;padding:32px 28px 26px;min-height:315px}
-    .portfolio-card__copy:before{content:"";position:absolute;top:0;left:28px;width:40px;height:2px;background:#b97c70}
     .portfolio-card__number{position:absolute;right:28px;top:29px;font:400 15px/1 Georgia,serif;letter-spacing:.04em;color:#b29d90}
     .portfolio-card__category{display:block;max-width:85%;min-height:28px;color:#9b6457}
     .portfolio-card__title{display:block;margin:31px 0 15px;line-height:1.1}
@@ -196,7 +195,6 @@
     @media(max-width:700px){
       .portfolio-card{min-height:288px}
       .portfolio-card__copy{padding:27px 23px 25px;min-height:288px}
-      .portfolio-card__copy:before{left:23px}
       .portfolio-card__number{right:23px;top:26px}
       .portfolio-card__title{margin:24px 0 13px;font-size:clamp(27px,7vw,34px)}
       .portfolio-card__desc{font-size:13px}
@@ -241,12 +239,12 @@
       <div class="case-list" aria-label="Избранные проекты"><details class="case">
  <summary class="case-heading"><span class="case-number">01</span><span class="case-title"><span class="case-name">Маяк</span><span class="case-type">Цифровая среда развития · клиентский проект</span></span><span class="case-short">Диагностика с ии, личный кабинет, библиотека и 30-дневный протокол. Платформа завершена и передана заказчице.</span><span class="case-plus" aria-hidden="true"></span></summary>
  <div class="case-body"><div class="case-text"><p><strong>Что сделала:</strong> спроектировала архитектуру и реализовала цифровую среду развития: диагностические тесты, обработку результатов с помощью ии, личный кабинет, библиотеку материалов и 30-дневный протокол.</p><p><strong>Технологическая основа:</strong> российские облачные сервисы. Платформа завершена, передана Лене и встроена ею в более широкую систему. После передачи заказчица смогла продолжить развитие и менять оформление самостоятельно. Методология проекта принадлежит заказчице.</p><blockquote class="case-quote">«Для меня эта система, которую сейчас ты собрала, она максимально прозрачная.»<cite>Лена · заказчица «Маяка»</cite></blockquote><p class="case-intro-gallery">Авторский интерфейс платформы. Нажмите на экран, чтобы рассмотреть его крупнее.</p></div><div class="case-gallery" aria-label="Реальные экраны цифровой платформы Маяк">
- <a class="case-shot case-shot--desktop" href="assets/cases/mayak/dashboard-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Личный кабинет"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/dashboard-desktop.png" alt="Личный кабинет платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Личный кабинет<span aria-hidden="true"> ↗</span></span></a>
- <a class="case-shot case-shot--desktop" href="assets/cases/mayak/protocol-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: 30-дневный протокол"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/protocol-desktop.png" alt="30-дневный протокол платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">30-дневный протокол<span aria-hidden="true"> ↗</span></span></a>
- <a class="case-shot case-shot--desktop" href="assets/cases/mayak/test-intro-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Диагностика: начало теста"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/test-intro-desktop.png" alt="Диагностика: начало теста платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Диагностика: начало теста<span aria-hidden="true"> ↗</span></span></a>
- <a class="case-shot case-shot--desktop" href="assets/cases/mayak/test-question-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Диагностика: вопросы"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/test-question-desktop.png" alt="Диагностика: вопросы платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Диагностика: вопросы<span aria-hidden="true"> ↗</span></span></a>
- <a class="case-shot case-shot--phone" href="assets/cases/mayak/dashboard-mobile.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Личный кабинет на телефоне"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/mayak/dashboard-mobile.png" alt="Личный кабинет на телефоне платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Личный кабинет на телефоне<span aria-hidden="true"> ↗</span></span></a>
- <a class="case-shot case-shot--phone" href="assets/cases/mayak/protocol-mobile.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Протокол на телефоне"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/mayak/protocol-mobile.png" alt="Протокол на телефоне платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Протокол на телефоне<span aria-hidden="true"> ↗</span></span></a>
+ <a class="case-shot case-shot--desktop" href="assets/cases/mayak/dashboard-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Личный кабинет"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/dashboard-desktop.png" alt="Личный кабинет платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Личный кабинет<span aria-hidden="true"> →</span></span></a>
+ <a class="case-shot case-shot--desktop" href="assets/cases/mayak/protocol-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: 30-дневный протокол"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/protocol-desktop.png" alt="30-дневный протокол платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">30-дневный протокол<span aria-hidden="true"> →</span></span></a>
+ <a class="case-shot case-shot--desktop" href="assets/cases/mayak/test-intro-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Диагностика: начало теста"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/test-intro-desktop.png" alt="Диагностика: начало теста платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Диагностика: начало теста<span aria-hidden="true"> →</span></span></a>
+ <a class="case-shot case-shot--desktop" href="assets/cases/mayak/test-question-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Диагностика: вопросы"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/test-question-desktop.png" alt="Диагностика: вопросы платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Диагностика: вопросы<span aria-hidden="true"> →</span></span></a>
+ <a class="case-shot case-shot--phone" href="assets/cases/mayak/dashboard-mobile.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Личный кабинет на телефоне"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/mayak/dashboard-mobile.png" alt="Личный кабинет на телефоне платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Личный кабинет на телефоне<span aria-hidden="true"> →</span></span></a>
+ <a class="case-shot case-shot--phone" href="assets/cases/mayak/protocol-mobile.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Протокол на телефоне"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/mayak/protocol-mobile.png" alt="Протокол на телефоне платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Протокол на телефоне<span aria-hidden="true"> →</span></span></a>
  </div></div>
  </details>
 <details class="case">
@@ -257,9 +255,9 @@
     <p><strong>Что получилось.</strong> По словам Антона, расчёты стали проще даже при неполном техническом задании. При этом самим клиентам всё ещё нужно объяснять, какие данные вводить, — приложение не заменяет их понимание экономики бизнеса.</p>
     <blockquote class="case-quote">«Появилось мини-апп - теперь это легко.»<cite>Антон · заказчик, специалист по трафику</cite></blockquote>
     <p class="case-intro-gallery">Подлинные экраны мини-приложения. Нажмите, чтобы рассмотреть крупнее.</p>
-  </div><div class="case-gallery" aria-label="Реальные экраны калькулятора для Антона"><a class="case-shot case-shot--phone" href="assets/cases/anton/calculator-goals.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Финансовые цели и план"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/anton/calculator-goals.webp" alt="Реальный экран калькулятора: годовая выручка, средний чек, маржинальность" loading="lazy" decoding="async"></span><span class="case-shot__label">Финансовые цели и план<span aria-hidden="true"> ↗</span></span></a>
-<a class="case-shot case-shot--phone" href="assets/cases/anton/calculator-funnel.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Воронка и конверсия"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/anton/calculator-funnel.webp" alt="Реальный экран калькулятора: воронка продаж и конверсия" loading="lazy" decoding="async"></span><span class="case-shot__label">Воронка и конверсия<span aria-hidden="true"> ↗</span></span></a>
-<a class="case-shot case-shot--phone" href="assets/cases/anton/calculator-expenses.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Расходы"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/anton/calculator-expenses.webp" alt="Реальный экран калькулятора: расходы бизнеса" loading="lazy" decoding="async"></span><span class="case-shot__label">Расходы<span aria-hidden="true"> ↗</span></span></a></div>
+  </div><div class="case-gallery" aria-label="Реальные экраны калькулятора для Антона"><a class="case-shot case-shot--phone" href="assets/cases/anton/calculator-goals.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Финансовые цели и план"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/anton/calculator-goals.webp" alt="Реальный экран калькулятора: годовая выручка, средний чек, маржинальность" loading="lazy" decoding="async"></span><span class="case-shot__label">Финансовые цели и план<span aria-hidden="true"> →</span></span></a>
+<a class="case-shot case-shot--phone" href="assets/cases/anton/calculator-funnel.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Воронка и конверсия"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/anton/calculator-funnel.webp" alt="Реальный экран калькулятора: воронка продаж и конверсия" loading="lazy" decoding="async"></span><span class="case-shot__label">Воронка и конверсия<span aria-hidden="true"> →</span></span></a>
+<a class="case-shot case-shot--phone" href="assets/cases/anton/calculator-expenses.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Расходы"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/anton/calculator-expenses.webp" alt="Реальный экран калькулятора: расходы бизнеса" loading="lazy" decoding="async"></span><span class="case-shot__label">Расходы<span aria-hidden="true"> →</span></span></a></div>
   <p class="case-data-note">Числа на снимках — демонстрационные значения интерфейса, а не результаты клиентов.</p></div>
   </details>
 <details class="case">
@@ -270,9 +268,9 @@
     <p><strong>Что получилось.</strong> Ксения использовала тест на нетворкингах и отметила живой интерес участников. Это её качественный отзыв, не измеренная статистика.</p>
     <blockquote class="case-quote">«Я уже использовала приложение в нетворкинге и хочу сказать , что это вызывает большой интерес и вовлекает гораздо лучше.»<cite>Ксения · заказчица, коуч</cite></blockquote>
     <p class="case-intro-gallery">Реальные экраны теста. Светлая и тёмная версии показывают один этап выбора мандалы, а не два последовательных шага.</p>
-  </div><div class="case-gallery" aria-label="Реальные экраны визуального теста Ксении"><a class="case-shot case-shot--phone" href="assets/cases/ksenia/life-spheres.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Выбор сферы жизни"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/ksenia/life-spheres.webp" alt="Реальный экран визуального теста: выбор сферы жизни" loading="lazy" decoding="async"></span><span class="case-shot__label">Выбор сферы жизни<span aria-hidden="true"> ↗</span></span></a>
-<a class="case-shot case-shot--phone" href="assets/cases/ksenia/mandalas-light.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Выбор мандалы · светлая версия"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/ksenia/mandalas-light.webp" alt="Реальный экран теста: восемь мандал на светлом фоне" loading="lazy" decoding="async"></span><span class="case-shot__label">Выбор мандалы · светлая версия<span aria-hidden="true"> ↗</span></span></a>
-<a class="case-shot case-shot--phone" href="assets/cases/ksenia/mandalas-dark.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Выбор мандалы · тёмная версия"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/ksenia/mandalas-dark.webp" alt="Реальный экран теста: восемь мандал на тёмном фоне" loading="lazy" decoding="async"></span><span class="case-shot__label">Выбор мандалы · тёмная версия<span aria-hidden="true"> ↗</span></span></a></div></div>
+  </div><div class="case-gallery" aria-label="Реальные экраны визуального теста Ксении"><a class="case-shot case-shot--phone" href="assets/cases/ksenia/life-spheres.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Выбор сферы жизни"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/ksenia/life-spheres.webp" alt="Реальный экран визуального теста: выбор сферы жизни" loading="lazy" decoding="async"></span><span class="case-shot__label">Выбор сферы жизни<span aria-hidden="true"> →</span></span></a>
+<a class="case-shot case-shot--phone" href="assets/cases/ksenia/mandalas-light.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Выбор мандалы · светлая версия"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/ksenia/mandalas-light.webp" alt="Реальный экран теста: восемь мандал на светлом фоне" loading="lazy" decoding="async"></span><span class="case-shot__label">Выбор мандалы · светлая версия<span aria-hidden="true"> →</span></span></a>
+<a class="case-shot case-shot--phone" href="assets/cases/ksenia/mandalas-dark.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Выбор мандалы · тёмная версия"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/ksenia/mandalas-dark.webp" alt="Реальный экран теста: восемь мандал на тёмном фоне" loading="lazy" decoding="async"></span><span class="case-shot__label">Выбор мандалы · тёмная версия<span aria-hidden="true"> →</span></span></a></div></div>
   </details>
 <details class="case">
  <summary class="case-heading"><span class="case-number">04</span><span class="case-title"><span class="case-name">БК Главбух</span><span class="case-type">Цифровая система эксперта · клиентский проект</span></span><span class="case-short">Для бухгалтерского проекта Гули — концепция, сайт, лид-магнит и интерактивный календарь.</span><span class="case-plus" aria-hidden="true"></span></summary>
@@ -285,8 +283,8 @@
 <details class="case">
  <summary class="case-heading"><span class="case-number">06</span><span class="case-title"><span class="case-name">Весёлые Знания</span><span class="case-type">Для детей · авторская семейная игра</span></span><span class="case-short">Семейная викторина с заданиями для 4-го класса и подготовки к ВПР.</span><span class="case-plus" aria-hidden="true"></span></summary>
  <div class="case-body"><div class="case-text"><p>Придумала семейную игру для совместного времени с ребёнком и добавила задания по школьным предметам — как раз в период подготовки к ВПР.</p><p>Мы играли дома несколько раз; позже ребёнок поделился ссылкой с подругами. Пример того, как повседневная идея может стать работающим игровым приложением.</p></div><div class="case-gallery case-gallery--kids" aria-label="Интерфейс обучающей викторины Весёлые Знания">
-<a class="case-shot case-shot--phone" href="assets/cases/veselye-znaniya/cover.jpg" target="_blank" rel="noopener" aria-label="Открыть главное меню игры крупно"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/veselye-znaniya/cover.jpg" alt="Главный экран игры «Весёлые Знания»: учимся и играем всей семьёй" loading="lazy" decoding="async"></span><span class="case-shot__label">Главный экран ↗</span></a>
-<a class="case-shot case-shot--phone" href="assets/cases/veselye-znaniya/question.jpg" target="_blank" rel="noopener" aria-label="Открыть игровой вопрос крупно"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/veselye-znaniya/question.jpg" alt="Игровой вопрос по арифметике с вариантами ответов" loading="lazy" decoding="async"></span><span class="case-shot__label">Как выглядит игра ↗</span></a></div></div>
+<a class="case-shot case-shot--phone" href="assets/cases/veselye-znaniya/cover.jpg" target="_blank" rel="noopener" aria-label="Открыть главное меню игры крупно"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/veselye-znaniya/cover.jpg" alt="Главный экран игры «Весёлые Знания»: учимся и играем всей семьёй" loading="lazy" decoding="async"></span><span class="case-shot__label">Главный экран →</span></a>
+<a class="case-shot case-shot--phone" href="assets/cases/veselye-znaniya/question.jpg" target="_blank" rel="noopener" aria-label="Открыть игровой вопрос крупно"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/veselye-znaniya/question.jpg" alt="Игровой вопрос по арифметике с вариантами ответов" loading="lazy" decoding="async"></span><span class="case-shot__label">Как выглядит игра →</span></a></div></div>
  </details>
 <details class="case">
  <summary class="case-heading"><span class="case-number">07</span><span class="case-title"><span class="case-name">Оскар</span><span class="case-type">Собственный продукт · ии-агент для контента</span></span><span class="case-short">Развивающийся ии-агент: контент, короткие видео, карусели и рабочая память.</span><span class="case-plus" aria-hidden="true"></span></summary>
@@ -294,7 +292,7 @@
  </details>
 <details class="case">
  <summary class="case-heading"><span class="case-number">08</span><span class="case-title"><span class="case-name">Студия каруселей</span><span class="case-type">Собственный продукт · работающий пилот</span></span><span class="case-short">Редактор, в котором можно собрать карусель из собственных фотографий и текста.</span><span class="case-plus" aria-hidden="true"></span></summary>
- <div class="case-body"><div class="case-text"><p>Создала интерактивную студию для визуальных публикаций: можно загрузить свои фото, добавить текст, отредактировать слайды и выгрузить результат.</p><a class="case-action" href="https://irinavedipro.github.io/carousel-studio-live-9f7k2m/?release=26" target="_blank" rel="noopener noreferrer">Открыть работающий пилот ↗</a></div></div>
+ <div class="case-body"><div class="case-text"><p>Создала интерактивную студию для визуальных публикаций: можно загрузить свои фото, добавить текст, отредактировать слайды и выгрузить результат.</p><a class="case-action" href="https://irinavedipro.github.io/carousel-studio-live-9f7k2m/?release=26" target="_blank" rel="noopener noreferrer">Открыть работающий пилот →</a></div></div>
  </details></div>
       <div class="proof-foot"><p>Разные задачи — один принцип: соединить опыт человека с возможностями ии и довести замысел до работающего решения.</p><a class="small-link" href="#contact">Обсудить сотрудничество</a></div>
     </section>
@@ -395,9 +393,10 @@
     const title=dialog.querySelector("#portfolio-modal-name");
     const category=dialog.querySelector("#portfolio-modal-category");
     const content=dialog.querySelector("#portfolio-modal-body");
-    let returnFocus=null;
-    function openProject(project,trigger){
+    let returnFocus=null,restoreFocusOnClose=false;
+    function openProject(project,trigger,viaKeyboard){
       returnFocus=trigger;
+      restoreFocusOnClose=viaKeyboard;
       title.textContent=project.querySelector(".case-name")?.textContent||"Проект";
       category.textContent=project.querySelector(".case-type")?.textContent||"";
       content.replaceChildren(project.querySelector(".case-body").cloneNode(true));
@@ -407,7 +406,7 @@
       eyebrow.className="case-cta__eyebrow";eyebrow.textContent="Ваш проект";
       message.className="case-cta__text";message.textContent=cta.desc;
       note.append(eyebrow,message);
-      const link=document.createElement("a");link.className="button";link.href="https://t.me/vedi_irina";link.target="_blank";link.rel="noopener noreferrer";link.textContent=cta.title+" ↗";link.setAttribute("aria-label",cta.title+" — написать Ирине в Telegram");
+      const link=document.createElement("a");link.className="button";link.href="https://t.me/vedi_irina";link.target="_blank";link.rel="noopener noreferrer";link.textContent=cta.title+" →";link.setAttribute("aria-label",cta.title+" — написать Ирине в Telegram");
       footer.append(note,link);content.append(footer);
       dialog.showModal();
       dialog.scrollTop=0;
@@ -415,7 +414,7 @@
     }
     close.addEventListener("click",()=>dialog.close());
     dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close();});
-    dialog.addEventListener("close",()=>{if(returnFocus?.isConnected)returnFocus.focus();});
+    dialog.addEventListener("close",()=>{if(returnFocus?.isConnected){if(restoreFocusOnClose)returnFocus.focus();else if(document.activeElement===returnFocus)returnFocus.blur();}restoreFocusOnClose=false;});
     function projectCard(project,i){
        const cover=media[i]||{tag:"Цифровой проект"};
        const button=document.createElement("button");
@@ -429,9 +428,9 @@
        tag.className="portfolio-card__category";tag.textContent=cover.tag;
        heading.className="portfolio-card__title";heading.textContent=project.querySelector(".case-name")?.textContent||"Проект";
        description.className="portfolio-card__desc";description.textContent=project.querySelector(".case-short")?.textContent||"";
-       link.className="portfolio-card__more";link.textContent="Смотреть кейс ↗";
+       link.className="portfolio-card__more";link.textContent="Смотреть кейс →";
        copy.append(number,tag,heading,description,link);button.append(copy);
-       button.addEventListener("click",()=>openProject(project,button));
+       button.addEventListener("click",e=>openProject(project,button,e.detail===0));
        return button;
      }
     const projectSlider=makeSlider(projects,"portfolio-carousel",projectCard,"Листайте избранные проекты. Выберите карточку, чтобы открыть подробности.");
