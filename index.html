@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#2f2526">
-  <meta name="description" content="Ирина Вединеева — стратег и архитектор авторских проектов. Соединяет опыт, идеи и технологии в цельные концепции и работающие цифровые системы.">
+  <meta name="description" content="Ирина Вединеева — архитектор цифровых систем. Соединяю ваш опыт с возможностями ии: платформы, приложения и ии-агенты.">
   <link rel="canonical" href="https://vedivibe.ru/">
   <title>Ирина Вединеева · Веди Вайб</title>
   <style>
@@ -53,6 +53,51 @@
     .hero-role{margin:25px 0 0;color:#dba18e;font-size:13px;font-weight:600;line-height:1.45;letter-spacing:.09em;text-transform:uppercase}.hero-thesis{margin-top:17px}
     @media(min-width:701px) and (max-width:800px){.hero-aside{display:block}.hero-portrait{margin:0 0 25px}}
     @media(max-width:700px){.hero-role{font-size:12px;margin-top:19px}.hero-thesis{margin-top:14px}}
+
+    /* 2026-10: approved positioning and editorial case cards */
+    .hero-services{max-width:680px;margin:22px 0 0;color:#f0e7df;font-size:clamp(16px,1.35vw,19px);line-height:1.55}
+    .hero-principle{max-width:680px;margin:17px 0 0;color:#cbbab1;font-size:14px;line-height:1.6}
+    .hero-principle strong{color:#f4e9e0;font-weight:600}
+    .hero-thesis{max-width:710px;font-size:clamp(23px,2.05vw,30px);line-height:1.24}
+    .case-list{border-top:1px solid var(--line)}
+    .case{border-bottom:1px solid var(--line)}
+    .case-heading{display:grid;grid-template-columns:53px minmax(215px,.66fr) minmax(0,1fr) 28px;gap:clamp(17px,2.8vw,40px);padding:32px 0;align-items:start;list-style:none;cursor:pointer;transition:padding-left .25s,background .25s}
+    .case-heading::-webkit-details-marker{display:none}
+    .case-heading:hover{padding-left:8px;background:#f4eee6}
+    .case-heading:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+    .case-number{font-size:11px;color:#a1695f;letter-spacing:.15em;margin-top:10px;font-weight:600}
+    .case-name{display:block;font:400 clamp(29px,2.7vw,42px)/1.05 Georgia,serif;letter-spacing:-.045em}
+    .case-type{display:block;margin-top:10px;font-size:11px;line-height:1.55;letter-spacing:.11em;text-transform:uppercase;color:#8a776d}
+    .case-short{font-size:15px;line-height:1.6;color:#5c514c;max-width:680px}
+    .case-plus{width:26px;height:26px;display:grid;place-items:center;color:#9d7065;font-size:25px;line-height:1}
+    .case-plus:before{content:"+"}
+    .case[open] .case-plus:before{content:"−"}
+    .case-body{padding:0 0 42px 53px;max-width:1100px}
+    .case-text{max-width:860px;margin:0 0 24px}
+    .case-text p{font-size:16px;line-height:1.68;color:#4f4741;margin:0 0 16px}
+    .case-text strong{color:#33292a}
+    .case-text .case-muted{color:#806e66;font-size:13px}
+    .case-quote{max-width:760px;margin:26px 0;padding:16px 0 16px 24px;border-left:2px solid #c57b6b;font:400 clamp(20px,2.05vw,29px)/1.3 Georgia,serif;color:#40302f}
+    .case-quote cite{display:block;margin-top:13px;font:600 11px/1.5 "Segoe UI",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#81685b}
+    .case-intro-gallery{font-size:13px!important;color:#8b7064!important}
+    .case-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px;margin-top:18px;align-items:start}
+    .case-shot{display:block;min-width:0;text-decoration:none;color:#4b3e3b}
+    .case-shot__frame{display:block;background:#241d1e;border:1px solid #c8b5a8;border-radius:12px;padding:9px 9px 10px;box-shadow:0 14px 36px rgba(47,37,38,.12);overflow:hidden;transition:transform .25s,box-shadow .25s}
+    .case-shot:hover .case-shot__frame{transform:translateY(-3px);box-shadow:0 19px 39px rgba(47,37,38,.18)}
+    .case-shot img{display:block;width:100%;height:auto;object-fit:contain;background:#e8e2d2}
+    .browser-bar{display:flex;align-items:center;gap:5px;height:18px;padding:0 7px 8px;color:#d6c6b9}
+    .browser-bar i{width:6px;height:6px;border:1px solid #d5b6a8;border-radius:50%}
+    .browser-bar small{margin-left:auto;font:10px Georgia,serif;letter-spacing:.07em}
+    .case-shot__label{display:block;margin-top:12px;font-size:13px;color:#66564f}
+    .case-shot__label span{color:#b56c5c}
+    .case-shot--phone{width:100%;max-width:320px;margin:4px auto 0}
+    .case-shot--phone .case-shot__frame{border-radius:29px;padding:10px 9px 13px;background:#312528;border:5px solid #34282a}
+    .case-shot--phone img{border-radius:16px}
+    .phone-speaker{display:block;width:34%;height:5px;margin:0 auto 9px;border-radius:8px;background:#786866}
+    .case-action{display:inline-flex;padding:12px 0;color:#8e4f47;font-weight:600;font-size:13px;border-bottom:1px solid #bd7d70;text-decoration:none}
+    @media(max-width:900px){.case-heading{grid-template-columns:36px minmax(0,1fr) 24px;gap:18px}.case-short{grid-column:2;grid-row:2}.case-plus{grid-column:3;grid-row:1}.case-body{padding-left:54px}}
+    @media(max-width:700px){.hero-thesis{font-size:21px}.hero-services{font-size:16px;margin-top:17px}.hero-principle{font-size:13px;margin-top:12px}.case-heading{padding:26px 0;gap:12px;grid-template-columns:30px minmax(0,1fr) 22px}.case-name{font-size:30px}.case-short{font-size:14px}.case-body{padding:0 0 33px 42px}.case-gallery{grid-template-columns:1fr;gap:20px}.case-shot--phone{max-width:275px}.case-quote{font-size:23px}}
+    @media(max-width:420px){.hero-thesis{font-size:19px;line-height:1.3}.case-name{font-size:27px}.case-body{padding-left:0}.case-short{font-size:14px}.case-heading{gap:10px}}
   </style>
 </head>
 <body>
@@ -68,8 +113,10 @@
             <div>
               <p class="eyebrow">Авторская практика</p>
               <h1><span class="line">Ирина</span><span class="line"><em>Вединеева.</em></span></h1>
-              <p class="hero-role">Стратег и архитектор авторских проектов.</p>
-              <p class="hero-thesis">Соединяю опыт, идеи и технологии в цельные концепции и работающие цифровые системы.</p>
+              <p class="hero-role">Архитектор цифровых систем</p>
+              <p class="hero-thesis">Соединяю ваш опыт с возможностями ии и превращаю идеи в работающие цифровые системы.</p>
+              <p class="hero-services">Для экспертов и предпринимателей создаю платформы, приложения и ии-агентов.</p>
+              <p class="hero-principle"><strong>Мой подход — партнёрство человека с ии.</strong><br>От концепции до работающего решения.</p>
             </div>
             <div class="hero-aside">
               <figure class="hero-portrait"><img src="irina-mountains-candidate.png" alt="Ирина с ноутбуком на фоне гор" width="1672" height="941" fetchpriority="high"></figure>
@@ -82,19 +129,53 @@
 
     <section class="bridge" id="approach">
       <p class="eyebrow">01 / Мой способ работы</p>
-      <div><h2>Увидеть целое.<br><em>Довести до формы.</em></h2><p>Сначала я изучаю то, что уже создано: опыт, продукты, аудиторию, рабочие процессы и ограничения. Тогда становится ясно, что нужно связать, что оставить человеку, а что можно воплотить технологически. Я собираю решение, проверяю его в деле и передаю так, чтобы его можно было продолжать.</p></div>
+      <div><h2>Система, которая<br><em>остаётся вашей.</em></h2><p>Я начинаю с вашего опыта, идей и задач: разрабатываю концепцию, продумываю архитектуру и объединяю цифровые инструменты в работающую систему. Мне важно, чтобы она была красивой, удобной и понятной — и чтобы после завершения нашей работы вы могли самостоятельно ею управлять и развивать дальше, без постоянной зависимости от разработчика.</p></div>
     </section>
 
     <section class="proof" id="work">
-      <div class="proof-head"><div><p class="eyebrow">02 / Моя работа</p></div><div><h2>Мои проекты.<br><em>И что в них сделано.</em></h2><p class="proof-intro">От работы с экспертами до собственных цифровых продуктов.</p></div></div>
-      <div class="work-list" aria-label="Примеры работ">
-        <div class="work"><span class="number">01</span><div><h3>Цифровая платформа</h3><span class="work-type">Система для развития</span></div><p>Диагностика, личный кабинет, материалы и 30-дневный протокол. Платформа передана команде заказчика.</p></div>
-        <div class="work"><span class="number">02</span><div><h3>Приложения для экспертов</h3><span class="work-type">Интерактивные продукты</span></div><p>В числе решений — диагностика с выбором темы и персональным результатом.</p></div>
-        <div class="work"><span class="number">03</span><div><h3>Концепция проекта</h3><span class="work-type">Позиционирование и система</span></div><p>Провела концепт-сессию: собрала позиционирование, аудиторию и продукт; упаковала сайт и Telegram-бота как части одной системы.</p></div>
-        <div class="work"><span class="number">04</span><div><h3>Оскар — SMM-щик</h3><span class="work-type">Авторский ИИ-продукт</span></div><p>Создала и выпустила несколько версий ИИ-агента для работы с контентом. Провела фокус-группу и дорабатываю продукт по обратной связи участников.</p></div>
-        <a class="work" href="https://irinavedipro.github.io/carousel-studio-live-9f7k2m/?release=26" target="_blank" rel="noopener noreferrer"><span class="number">05</span><div><h3>Студия каруселей</h3><span class="work-type">Мой инструмент · открыть пилот</span></div><p>В этом бесплатном пилоте можно собрать карусель из своих фото и текста, отредактировать её и скачать готовый файл.</p></a>
-      </div>
-      <div class="proof-foot"><p>Разные задачи — один принцип: начать с реального опыта человека и довести замысел до работающего результата.</p><a class="small-link" href="#contact">Обсудить сотрудничество</a></div>
+      <div class="proof-head"><div><p class="eyebrow">02 / Моя работа</p></div><div><h2>Избранные проекты.<br><em>От идеи до системы.</em></h2><p class="proof-intro">Это только часть моих работ — клиентские системы, приложения для экспертов, собственные продукты и семейные эксперименты. Откройте любой кейс, чтобы узнать подробности.</p></div></div>
+      <div class="case-list" aria-label="Избранные проекты"><details class="case">
+ <summary class="case-heading"><span class="case-number">01</span><span class="case-title"><span class="case-name">Маяк</span><span class="case-type">Цифровая среда развития · клиентский проект</span></span><span class="case-short">Диагностика с ии, личный кабинет, библиотека и 30-дневный протокол. Платформа завершена и передана заказчице.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p><strong>Что сделала:</strong> спроектировала архитектуру и реализовала цифровую среду развития: диагностические тесты, обработку результатов с помощью ии, личный кабинет, библиотеку материалов и 30-дневный протокол.</p><p><strong>Технологическая основа:</strong> российские облачные сервисы. Платформа завершена, передана Лене и встроена ею в более широкую систему. После передачи заказчица смогла продолжить развитие и менять оформление самостоятельно. Методология проекта принадлежит заказчице.</p><blockquote class="case-quote">«Для меня эта система, которую сейчас ты собрала, она максимально прозрачная.»<cite>Лена · заказчица «Маяка»</cite></blockquote><p class="case-intro-gallery">Авторский интерфейс платформы. Нажмите на экран, чтобы рассмотреть его крупнее.</p></div><div class="case-gallery" aria-label="Реальные экраны цифровой платформы Маяк">
+ <a class="case-shot case-shot--desktop" href="assets/cases/mayak/dashboard-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Личный кабинет"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/dashboard-desktop.png" alt="Личный кабинет платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Личный кабинет<span aria-hidden="true"> ↗</span></span></a>
+ <a class="case-shot case-shot--desktop" href="assets/cases/mayak/protocol-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: 30-дневный протокол"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/protocol-desktop.png" alt="30-дневный протокол платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">30-дневный протокол<span aria-hidden="true"> ↗</span></span></a>
+ <a class="case-shot case-shot--desktop" href="assets/cases/mayak/test-intro-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Диагностика: начало теста"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/test-intro-desktop.png" alt="Диагностика: начало теста платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Диагностика: начало теста<span aria-hidden="true"> ↗</span></span></a>
+ <a class="case-shot case-shot--desktop" href="assets/cases/mayak/test-question-desktop.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Диагностика: вопросы"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/test-question-desktop.png" alt="Диагностика: вопросы платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Диагностика: вопросы<span aria-hidden="true"> ↗</span></span></a>
+ <a class="case-shot case-shot--phone" href="assets/cases/mayak/dashboard-mobile.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Личный кабинет на телефоне"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/mayak/dashboard-mobile.png" alt="Личный кабинет на телефоне платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Личный кабинет на телефоне<span aria-hidden="true"> ↗</span></span></a>
+ <a class="case-shot case-shot--phone" href="assets/cases/mayak/protocol-mobile.png" target="_blank" rel="noopener" aria-label="Открыть в полном размере: Протокол на телефоне"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/mayak/protocol-mobile.png" alt="Протокол на телефоне платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Протокол на телефоне<span aria-hidden="true"> ↗</span></span></a>
+ </div></div>
+ </details>
+<details class="case">
+ <summary class="case-heading"><span class="case-number">02</span><span class="case-title"><span class="case-name">Unit Economy Calculator</span><span class="case-type">Приложение для эксперта · клиентский проект</span></span><span class="case-short">Интерактивный калькулятор маркетингового бюджета для клиентов специалиста по трафику.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>Для Антона, маркетолога по трафику, создала приложение, с помощью которого потенциальные клиенты могут оценить расходы на маркетинг и рассчитать бюджет.</p><p>Отдельный инструмент, превращающий профессиональную экспертизу в понятный интерактивный расчёт. Отзыв заказчика хранится в материалах проекта; его подлинный текст ещё готовится к публикации.</p></div></div>
+ </details>
+<details class="case">
+ <summary class="case-heading"><span class="case-number">03</span><span class="case-title"><span class="case-name">Fire of Life</span><span class="case-type">Интерактивный лид-магнит · клиентский проект</span></span><span class="case-short">Красивый тест для коуча Ксении: знакомство с экспертом через игру и персональный результат.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>Создала для Ксении интерактивный лид-магнит: на нетворкингах участники переходили по QR-коду, проходили короткий визуальный тест и получали персональный результат.</p><p>Ксения действительно использовала приложение в работе. Оно помогало знакомить новую аудиторию с её подходом без длинных объяснений.</p></div></div>
+ </details>
+<details class="case">
+ <summary class="case-heading"><span class="case-number">04</span><span class="case-title"><span class="case-name">БК Главбух</span><span class="case-type">Цифровая система эксперта · клиентский проект</span></span><span class="case-short">Для бухгалтерского проекта Гули — концепция, сайт, лид-магнит и интерактивный календарь.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>Работала с проектом «БК Главбух» как с системой: от концепции до цифровых инструментов. Создала сайт, лид-магнит и календарь — решения, которые заказчица применяла в своей работе.</p><p>Это не набор несвязанных страниц, а разные точки взаимодействия аудитории с экспертом.</p></div></div>
+ </details>
+<details class="case">
+ <summary class="case-heading"><span class="case-number">05</span><span class="case-title"><span class="case-name">Clover Voice</span><span class="case-type">Концепция и цифровая воронка · клиентский проект</span></span><span class="case-short">Для Светы — концепция проекта, сайт и собранная воронка взаимодействия с аудиторией.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>После работы с опытом и замыслом Светы оформила концепцию проекта и превратила её в цифровое представление и воронку. Концепция здесь стала основой для взаимосвязанных инструментов, а не отдельным документом.</p></div></div>
+ </details>
+<details class="case">
+ <summary class="case-heading"><span class="case-number">06</span><span class="case-title"><span class="case-name">Весёлые Знания</span><span class="case-type">Для детей · авторская семейная игра</span></span><span class="case-short">Семейная викторина с заданиями для 4-го класса и подготовки к ВПР.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>Придумала семейную игру для совместного времени с ребёнком и добавила задания по школьным предметам — как раз в период подготовки к ВПР.</p><p>Мы играли дома несколько раз; позже ребёнок поделился ссылкой с подругами. Пример того, как повседневная идея может стать работающим игровым приложением.</p></div><div class="case-gallery case-gallery--kids" aria-label="Интерфейс обучающей викторины Весёлые Знания">
+<a class="case-shot case-shot--phone" href="assets/cases/veselye-znaniya/cover.jpg" target="_blank" rel="noopener" aria-label="Открыть главное меню игры крупно"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/veselye-znaniya/cover.jpg" alt="Главный экран игры «Весёлые Знания»: учимся и играем всей семьёй" loading="lazy" decoding="async"></span><span class="case-shot__label">Главный экран ↗</span></a>
+<a class="case-shot case-shot--phone" href="assets/cases/veselye-znaniya/question.jpg" target="_blank" rel="noopener" aria-label="Открыть игровой вопрос крупно"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/veselye-znaniya/question.jpg" alt="Игровой вопрос по арифметике с вариантами ответов" loading="lazy" decoding="async"></span><span class="case-shot__label">Как выглядит игра ↗</span></a></div></div>
+ </details>
+<details class="case">
+ <summary class="case-heading"><span class="case-number">07</span><span class="case-title"><span class="case-name">Оскар</span><span class="case-type">Собственный продукт · ии-агент для контента</span></span><span class="case-short">Развивающийся ии-агент: контент, короткие видео, карусели и рабочая память.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>Разрабатываю собственного ии-агента для работы с контентом. В экспериментальных версиях тестирую обработку вертикальных видео, карусели и систему памяти.</p><p>Это развивающийся авторский продукт, а не завершённое массовое внедрение.</p></div></div>
+ </details>
+<details class="case">
+ <summary class="case-heading"><span class="case-number">08</span><span class="case-title"><span class="case-name">Студия каруселей</span><span class="case-type">Собственный продукт · работающий пилот</span></span><span class="case-short">Редактор, в котором можно собрать карусель из собственных фотографий и текста.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>Создала интерактивную студию для визуальных публикаций: можно загрузить свои фото, добавить текст, отредактировать слайды и выгрузить результат.</p><a class="case-action" href="https://irinavedipro.github.io/carousel-studio-live-9f7k2m/?release=26" target="_blank" rel="noopener noreferrer">Открыть работающий пилот ↗</a></div></div>
+ </details></div>
+      <div class="proof-foot"><p>Разные задачи — один принцип: соединить опыт человека с возможностями ии и довести замысел до работающего решения.</p><a class="small-link" href="#contact">Обсудить сотрудничество</a></div>
     </section>
 
     <section class="voices" id="voices" aria-labelledby="voices-title">
