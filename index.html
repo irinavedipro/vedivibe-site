@@ -178,6 +178,31 @@
     }
     @media(max-width:420px){.hero{padding-top:15px}.hero-aside{margin-top:15px}.hero-portrait{margin-bottom:12px}.hero-actions .button{min-width:0;width:100%}}
 
+
+    /* Тихая типографическая витрина; фирменные палитра и шрифты сохранены. */
+    .portfolio-card{min-height:315px;background:#f6f1e9}
+    .portfolio-card__copy{position:relative;padding:32px 28px 26px;min-height:315px}
+    .portfolio-card__copy:before{content:"";position:absolute;top:0;left:28px;width:40px;height:2px;background:#b97c70}
+    .portfolio-card__number{position:absolute;right:28px;top:29px;font:400 15px/1 Georgia,serif;letter-spacing:.04em;color:#b29d90}
+    .portfolio-card__category{display:block;max-width:85%;min-height:28px;color:#9b6457}
+    .portfolio-card__title{display:block;margin:31px 0 15px;line-height:1.1}
+    .portfolio-card__desc{flex:1;max-width:340px;line-height:1.65}
+    .portfolio-card__more{padding-top:30px}
+    .portfolio-modal .case-data-note{margin:21px 0 0;color:#82716a;font-size:12px;line-height:1.5}
+    .case-cta{display:flex;justify-content:space-between;align-items:end;gap:26px;flex-wrap:wrap;margin-top:44px;padding:28px 0 4px;border-top:1px solid #c9b7a9}
+    .case-cta__eyebrow{display:block;margin:0 0 10px;font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#96685d}
+    .case-cta__text{margin:0;max-width:570px;font:400 clamp(23px,2.3vw,32px)/1.23 Georgia,serif;letter-spacing:-.035em;color:#403333}
+    .case-cta .button{min-width:220px}
+    @media(max-width:700px){
+      .portfolio-card{min-height:288px}
+      .portfolio-card__copy{padding:27px 23px 25px;min-height:288px}
+      .portfolio-card__copy:before{left:23px}
+      .portfolio-card__number{right:23px;top:26px}
+      .portfolio-card__title{margin:24px 0 13px;font-size:clamp(27px,7vw,34px)}
+      .portfolio-card__desc{font-size:13px}
+      .case-cta{margin-top:32px;padding-top:25px}
+      .case-cta .button{width:100%}
+    }
   </style>
 </head>
 <body>
@@ -225,13 +250,30 @@
  </div></div>
  </details>
 <details class="case">
- <summary class="case-heading"><span class="case-number">02</span><span class="case-title"><span class="case-name">Unit Economy Calculator</span><span class="case-type">Приложение для эксперта · клиентский проект</span></span><span class="case-short">Интерактивный калькулятор маркетингового бюджета для клиентов специалиста по трафику.</span><span class="case-plus" aria-hidden="true"></span></summary>
- <div class="case-body"><div class="case-text"><p>Для Антона, маркетолога по трафику, создала приложение, с помощью которого потенциальные клиенты могут оценить расходы на маркетинг и рассчитать бюджет.</p><p>Отдельный инструмент, превращающий профессиональную экспертизу в понятный интерактивный расчёт. Отзыв заказчика хранится в материалах проекта; его подлинный текст ещё готовится к публикации.</p></div></div>
- </details>
+  <summary class="case-heading"><span class="case-number">02</span><span class="case-title"><span class="case-name">Калькулятор окупаемости</span><span class="case-type">Финансовый калькулятор · клиентский проект</span></span><span class="case-short">Мини-приложение для маркетолога Антона: расчёт финансовой модели бизнеса и маркетинговых расходов вместо ручных таблиц Excel.</span><span class="case-plus" aria-hidden="true"></span></summary>
+  <div class="case-body"><div class="case-text">
+    <p><strong>Задача.</strong> Антон, специалист по трафику, хотел перестать вручную рассчитывать клиентам окупаемость бизнеса в Excel.</p>
+    <p><strong>Решение.</strong> Создала интерактивный калькулятор: можно задать план продаж, средний чек, маржинальность, параметры воронки и расходы, чтобы оценить финансовую модель.</p>
+    <p><strong>Что получилось.</strong> По словам Антона, расчёты стали проще даже при неполном техническом задании. При этом самим клиентам всё ещё нужно объяснять, какие данные вводить, — приложение не заменяет их понимание экономики бизнеса.</p>
+    <blockquote class="case-quote">«Появилось мини-апп - теперь это легко.»<cite>Антон · заказчик, специалист по трафику</cite></blockquote>
+    <p class="case-intro-gallery">Подлинные экраны мини-приложения. Нажмите, чтобы рассмотреть крупнее.</p>
+  </div><div class="case-gallery" aria-label="Реальные экраны калькулятора для Антона"><a class="case-shot case-shot--phone" href="assets/cases/anton/calculator-goals.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Финансовые цели и план"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/anton/calculator-goals.webp" alt="Реальный экран калькулятора: годовая выручка, средний чек, маржинальность" loading="lazy" decoding="async"></span><span class="case-shot__label">Финансовые цели и план<span aria-hidden="true"> ↗</span></span></a>
+<a class="case-shot case-shot--phone" href="assets/cases/anton/calculator-funnel.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Воронка и конверсия"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/anton/calculator-funnel.webp" alt="Реальный экран калькулятора: воронка продаж и конверсия" loading="lazy" decoding="async"></span><span class="case-shot__label">Воронка и конверсия<span aria-hidden="true"> ↗</span></span></a>
+<a class="case-shot case-shot--phone" href="assets/cases/anton/calculator-expenses.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Расходы"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/anton/calculator-expenses.webp" alt="Реальный экран калькулятора: расходы бизнеса" loading="lazy" decoding="async"></span><span class="case-shot__label">Расходы<span aria-hidden="true"> ↗</span></span></a></div>
+  <p class="case-data-note">Числа на снимках — демонстрационные значения интерфейса, а не результаты клиентов.</p></div>
+  </details>
 <details class="case">
- <summary class="case-heading"><span class="case-number">03</span><span class="case-title"><span class="case-name">Fire of Life</span><span class="case-type">Интерактивный лид-магнит · клиентский проект</span></span><span class="case-short">Красивый тест для коуча Ксении: знакомство с экспертом через игру и персональный результат.</span><span class="case-plus" aria-hidden="true"></span></summary>
- <div class="case-body"><div class="case-text"><p>Создала для Ксении интерактивный лид-магнит: на нетворкингах участники переходили по QR-коду, проходили короткий визуальный тест и получали персональный результат.</p><p>Ксения действительно использовала приложение в работе. Оно помогало знакомить новую аудиторию с её подходом без длинных объяснений.</p></div></div>
- </details>
+  <summary class="case-heading"><span class="case-number">03</span><span class="case-title"><span class="case-name">Визуальный тест для нетворкинга</span><span class="case-type">Интерактивный лид-магнит · клиентский проект</span></span><span class="case-short">Для коуча Ксении: короткий визуальный тест, который помогает новым знакомым узнать её подход.</span><span class="case-plus" aria-hidden="true"></span></summary>
+  <div class="case-body"><div class="case-text">
+    <p><strong>Задача.</strong> Ксении нужен был интересный способ знакомить участников нетворкингов со своей практикой — не через длинную презентацию, а через личный опыт.</p>
+    <p><strong>Решение.</strong> Превратила идею в интерактивный путь: человек переходил по QR-коду, выбирал сферу жизни и мандалу, которая ему откликается. Были проработаны оформление и быстрые правки по запросам Ксении.</p>
+    <p><strong>Что получилось.</strong> Ксения использовала тест на нетворкингах и отметила живой интерес участников. Это её качественный отзыв, не измеренная статистика.</p>
+    <blockquote class="case-quote">«это вызывает большой интерес и вовлекает гораздо лучше.»<cite>Ксения · заказчица, коуч</cite></blockquote>
+    <p class="case-intro-gallery">Реальные экраны теста. Светлая и тёмная версии показывают один этап выбора мандалы, а не два последовательных шага.</p>
+  </div><div class="case-gallery" aria-label="Реальные экраны визуального теста Ксении"><a class="case-shot case-shot--phone" href="assets/cases/ksenia/life-spheres.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Выбор сферы жизни"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/ksenia/life-spheres.webp" alt="Реальный экран визуального теста: выбор сферы жизни" loading="lazy" decoding="async"></span><span class="case-shot__label">Выбор сферы жизни<span aria-hidden="true"> ↗</span></span></a>
+<a class="case-shot case-shot--phone" href="assets/cases/ksenia/mandalas-light.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Выбор мандалы · светлая версия"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/ksenia/mandalas-light.webp" alt="Реальный экран теста: восемь мандал на светлом фоне" loading="lazy" decoding="async"></span><span class="case-shot__label">Выбор мандалы · светлая версия<span aria-hidden="true"> ↗</span></span></a>
+<a class="case-shot case-shot--phone" href="assets/cases/ksenia/mandalas-dark.webp" target="_blank" rel="noopener" aria-label="Открыть экран крупно: Выбор мандалы · тёмная версия"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/ksenia/mandalas-dark.webp" alt="Реальный экран теста: восемь мандал на тёмном фоне" loading="lazy" decoding="async"></span><span class="case-shot__label">Выбор мандалы · тёмная версия<span aria-hidden="true"> ↗</span></span></a></div></div>
+  </details>
 <details class="case">
  <summary class="case-heading"><span class="case-number">04</span><span class="case-title"><span class="case-name">БК Главбух</span><span class="case-type">Цифровая система эксперта · клиентский проект</span></span><span class="case-short">Для бухгалтерского проекта Гули — концепция, сайт, лид-магнит и интерактивный календарь.</span><span class="case-plus" aria-hidden="true"></span></summary>
  <div class="case-body"><div class="case-text"><p>Работала с проектом «БК Главбух» как с системой: от концепции до цифровых инструментов. Создала сайт, лид-магнит и календарь — решения, которые заказчица применяла в своей работе.</p><p>Это не набор несвязанных страниц, а разные точки взаимодействия аудитории с экспертом.</p></div></div>
@@ -261,9 +303,10 @@
       <div class="voices-head"><p class="eyebrow">03 / Обратная связь</p><h2 id="voices-title">О моей работе — словами клиентов.</h2></div>
       <figure class="voice-feature"><blockquote>«После твоего появления, у меня будто опора появилась! Спасибо тебе!»</blockquote><figcaption>Кристина · отзыв во время работы над визуальной системой</figcaption></figure>
       <div class="voice-grid">
-        <figure class="voice"><blockquote>«Я уже использовала приложение в нетворкинге и хочу сказать, что это вызывает большой интерес и вовлекает гораздо лучше».</blockquote><figcaption>Заказчица приложения для эксперта · письменный отзыв</figcaption></figure>
+        <figure class="voice"><blockquote>«Я уже использовала приложение в нетворкинге и хочу сказать , что это вызывает большой интерес и вовлекает гораздо лучше.»</blockquote><figcaption>Ксения · коуч, визуальный тест для нетворкинга</figcaption></figure>
         <figure class="voice"><blockquote>«То есть для меня эта система, которую сейчас ты собрала, она максимально прозрачная.»</blockquote><figcaption>Лена · заказчица цифровой платформы «Маяк»</figcaption></figure>
         <figure class="voice"><blockquote>«Я сама на своём телефоне создала нужную автоматизацию и теперь смогу это делать сама».</blockquote><figcaption>Наталья · эксперт, настройка автоматизации</figcaption></figure>
+         <figure class="voice"><blockquote>«Появилось мини-апп - теперь это легко.»</blockquote><figcaption>Антон · маркетолог по трафику, калькулятор окупаемости</figcaption></figure>
       </div>
     </section>
 
@@ -280,15 +323,25 @@
     const reviewsSection = document.getElementById("voices");
     if (!projects.length || !fallback || !proof || !reviewsSection) return;
     const media = [
-      {kind:"mayak",image:"assets/cases/mayak/dashboard-desktop.png",tag:"Цифровая среда развития"},
-      {kind:"unit",symbol:"CPL / CAC",tag:"Бизнес-калькулятор"},
-      {kind:"fire",symbol:"Fire of\nLife",tag:"Лид-магнит"},
-      {kind:"bk",symbol:"БК\nГлавбух",tag:"Цифровые инструменты"},
-      {kind:"clover",symbol:"Clover\nVoice",tag:"Концепция + воронка"},
-      {kind:"kids",image:"assets/cases/veselye-znaniya/cover.jpg",tag:"Для детей"},
-      {kind:"oscar",symbol:"Oskar.",tag:"ии-агент"},
-      {kind:"studio",symbol:"Студия\nкаруселей",tag:"Визуальный редактор"}
-    ];
+       {tag:"Цифровая среда развития"},
+       {tag:"Финансовый калькулятор"},
+       {tag:"Интерактивный лид-магнит"},
+       {tag:"Система для эксперта"},
+       {tag:"Концепция и цифровая воронка"},
+       {tag:"Обучающая игра"},
+       {tag:"Авторский ии-агент"},
+       {tag:"Редактор каруселей"}
+     ];
+     const projectCtas = [
+       {title:"Создать свою цифровую среду",desc:"Обсудим цифровую систему под ваш опыт и методику."},
+       {title:"Собрать свой калькулятор",desc:"Превратим сложные расчёты в инструмент для вашей работы."},
+       {title:"Собрать свой лид-магнит",desc:"Придумаем интерактивный способ знакомить людей с вашим подходом."},
+       {title:"Собрать цифровую систему",desc:"Соединим нужные инструменты вокруг вашей практики."},
+       {title:"Продумать свою цифровую воронку",desc:"Обсудим путь знакомства и взаимодействия с вашей аудиторией."},
+       {title:"Создать своё приложение",desc:"Воплотим вашу идею в удобный цифровой формат."},
+       {title:"Обсудить своего ии-агента",desc:"Найдём задачу, где ии станет полезной частью системы."},
+       {title:"Создать свой цифровой продукт",desc:"Обсудим инструмент для ваших материалов и процессов."}
+     ];
     function makeSlider(items,className,createCard,ariaLabel) {
       const shell=document.createElement("div");
       shell.className="carousel-shell";
@@ -348,6 +401,14 @@
       title.textContent=project.querySelector(".case-name")?.textContent||"Проект";
       category.textContent=project.querySelector(".case-type")?.textContent||"";
       content.replaceChildren(project.querySelector(".case-body").cloneNode(true));
+      const cta=projectCtas[projects.indexOf(project)]||{title:"Обсудить свой проект",desc:"Расскажите о вашей идее."};
+      const footer=document.createElement("div");footer.className="case-cta";
+      const note=document.createElement("div"),eyebrow=document.createElement("span"),message=document.createElement("p");
+      eyebrow.className="case-cta__eyebrow";eyebrow.textContent="Ваш проект";
+      message.className="case-cta__text";message.textContent=cta.desc;
+      note.append(eyebrow,message);
+      const link=document.createElement("a");link.className="button";link.href="https://t.me/vedi_irina";link.target="_blank";link.rel="noopener noreferrer";link.textContent=cta.title+" ↗";link.setAttribute("aria-label",cta.title+" — написать Ирине в Telegram");
+      footer.append(note,link);content.append(footer);
       dialog.showModal();
       dialog.scrollTop=0;
       close.focus();
@@ -356,39 +417,23 @@
     dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close();});
     dialog.addEventListener("close",()=>{if(returnFocus?.isConnected)returnFocus.focus();});
     function projectCard(project,i){
-      const cover=media[i]||{kind:"studio",symbol:"Проект",tag:"Цифровая система"};
-      const button=document.createElement("button");
-      button.className="portfolio-card";button.type="button";
-      button.setAttribute("aria-haspopup","dialog");
-      button.setAttribute("aria-label","Подробнее о проекте «"+(project.querySelector(".case-name")?.textContent||"Проект")+"»");
-      const art=document.createElement("div");
-      art.className="portfolio-art portfolio-art--"+cover.kind;
-      const badge=document.createElement("span");
-      badge.className="portfolio-art__type";badge.textContent=cover.tag;
-      art.append(badge);
-      if(cover.image){
-        const img=document.createElement("img");
-        img.src=cover.image;
-        img.alt="Интерфейс проекта «"+(project.querySelector(".case-name")?.textContent||"Проект")+"»";
-        img.loading=i<2?"eager":"lazy";img.decoding="async";
-        art.append(img);
-      }else{
-        const ellipse=document.createElement("span"),symbol=document.createElement("span");
-        ellipse.className="portfolio-art__rule";ellipse.setAttribute("aria-hidden","true");
-        symbol.className="portfolio-art__symbol";symbol.textContent=cover.symbol;
-        art.append(ellipse,symbol);
-      }
-      const copy=document.createElement("div");
-      copy.className="portfolio-card__copy";
-      const tag=document.createElement("span"),heading=document.createElement("span"),description=document.createElement("p"),link=document.createElement("span");
-      tag.className="portfolio-card__category";tag.textContent=cover.tag;
-      heading.className="portfolio-card__title";heading.textContent=project.querySelector(".case-name")?.textContent||"Проект";
-      description.className="portfolio-card__desc";description.textContent=project.querySelector(".case-short")?.textContent||"";
-      link.className="portfolio-card__more";link.textContent="Смотреть кейс ↗";
-      copy.append(tag,heading,description,link);button.append(art,copy);
-      button.addEventListener("click",()=>openProject(project,button));
-      return button;
-    }
+       const cover=media[i]||{tag:"Цифровой проект"};
+       const button=document.createElement("button");
+       button.className="portfolio-card";button.type="button";
+       button.setAttribute("aria-haspopup","dialog");
+       button.setAttribute("aria-label","Подробнее о проекте «"+(project.querySelector(".case-name")?.textContent||"Проект")+"»");
+       const copy=document.createElement("div");
+       copy.className="portfolio-card__copy";
+       const number=document.createElement("span"),tag=document.createElement("span"),heading=document.createElement("span"),description=document.createElement("p"),link=document.createElement("span");
+       number.className="portfolio-card__number";number.textContent=String(i+1).padStart(2,"0");number.setAttribute("aria-hidden","true");
+       tag.className="portfolio-card__category";tag.textContent=cover.tag;
+       heading.className="portfolio-card__title";heading.textContent=project.querySelector(".case-name")?.textContent||"Проект";
+       description.className="portfolio-card__desc";description.textContent=project.querySelector(".case-short")?.textContent||"";
+       link.className="portfolio-card__more";link.textContent="Смотреть кейс ↗";
+       copy.append(number,tag,heading,description,link);button.append(copy);
+       button.addEventListener("click",()=>openProject(project,button));
+       return button;
+     }
     const projectSlider=makeSlider(projects,"portfolio-carousel",projectCard,"Листайте избранные проекты. Выберите карточку, чтобы открыть подробности.");
     proof.querySelector(".proof-head").after(projectSlider);
     fallback.hidden=true;
