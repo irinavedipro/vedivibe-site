@@ -414,7 +414,7 @@
     }
     close.addEventListener("click",()=>dialog.close());
     dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close();});
-    dialog.addEventListener("close",()=>{if(restoreFocusOnClose&&returnFocus?.isConnected)returnFocus.focus();restoreFocusOnClose=false;});
+    dialog.addEventListener("close",()=>{if(returnFocus?.isConnected){if(restoreFocusOnClose)returnFocus.focus();else if(document.activeElement===returnFocus)returnFocus.blur();}restoreFocusOnClose=false;});
     function projectCard(project,i){
        const cover=media[i]||{tag:"Цифровой проект"};
        const button=document.createElement("button");
