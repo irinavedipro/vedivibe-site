@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#2f2526">
-  <meta name="description" content="Ирина Вединеева — архитектор цифровых систем. Соединяю ваш опыт с возможностями ии: платформы, приложения и ии-агенты.">
+  <meta name="description" content="Ирина Вединеева — архитектор цифровых систем. Соединяю ваш опыт с возможностями ИИ: платформы, приложения и ИИ-агенты.">
   <link rel="canonical" href="https://vedivibe.ru/">
   <title>Ирина Вединеева · Веди Вайб</title>
   <style>
@@ -200,6 +200,12 @@
       .case-cta{margin-top:32px;padding-top:25px}
       .case-cta .button{width:100%}
     }
+  
+    /* Case gallery layout only; uses the site's existing colors and typography. */
+    .portfolio-modal .case-gallery--vedi-rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;padding:8px 0 19px}
+    .portfolio-modal .case-gallery--vedi-rail .case-shot--phone{flex:0 0 190px;width:190px;margin:0;max-width:none;scroll-snap-align:start}
+    .portfolio-modal .case-gallery--vedi-rail .case-shot img{height:260px;object-fit:cover;object-position:top}
+    @media(max-width:700px){.portfolio-modal .case-gallery--vedi-rail .case-shot--phone{flex-basis:170px;width:170px}}
   </style>
 </head>
 <body>
@@ -215,9 +221,9 @@
             <div>
               <h1><span class="line">Ирина</span><span class="line"><em>Вединеева.</em></span></h1>
               <p class="hero-role">Архитектор цифровых систем</p>
-              <p class="hero-thesis">Соединяю ваш опыт с возможностями ии и превращаю идеи в работающие цифровые системы.</p>
-              <p class="hero-services">Для экспертов и предпринимателей создаю платформы, приложения и ии-агентов.</p>
-              <p class="hero-principle"><strong>Мой подход — партнёрство человека с ии.</strong><br>От концепции до работающего решения.</p>
+              <p class="hero-thesis">Соединяю ваш опыт с возможностями ИИ и превращаю идеи в работающие цифровые системы.</p>
+              <p class="hero-services">Для экспертов и предпринимателей создаю платформы, приложения и ИИ-агентов.</p>
+              <p class="hero-principle"><strong>Мой подход — партнёрство человека с ИИ.</strong><br>От концепции до работающего решения.</p>
             </div>
             <div class="hero-aside">
               <figure class="hero-portrait"><img src="irina-mountains-candidate.png" alt="Ирина с ноутбуком на фоне гор" width="1672" height="941" fetchpriority="high"></figure>
@@ -230,14 +236,14 @@
 
     <section class="bridge" id="approach">
       <p class="eyebrow">01 / Мой способ работы</p>
-      <div><h2>Система, которая<br><em>остаётся вашей.</em></h2><div class="mobile-approach-context"><p>Для экспертов и предпринимателей создаю платформы, приложения и ии-агентов.</p><p><strong>Мой подход — партнёрство человека с ии.</strong> От концепции до работающего решения.</p></div><p>Я начинаю с вашего опыта, идей и задач: разрабатываю концепцию, продумываю архитектуру и объединяю цифровые инструменты в работающую систему. Мне важно, чтобы она была красивой, удобной и понятной — и чтобы после завершения нашей работы вы могли самостоятельно ею управлять и развивать дальше, без постоянной зависимости от разработчика.</p></div>
+      <div><h2>Система, которая<br><em>остаётся вашей.</em></h2><div class="mobile-approach-context"><p>Для экспертов и предпринимателей создаю платформы, приложения и ИИ-агентов.</p><p><strong>Мой подход — партнёрство человека с ИИ.</strong> От концепции до работающего решения.</p></div><p>Я начинаю с вашего опыта, идей и задач: разрабатываю концепцию, продумываю архитектуру и объединяю цифровые инструменты в работающую систему. Мне важно, чтобы она была красивой, удобной и понятной — и чтобы после завершения нашей работы вы могли самостоятельно ею управлять и развивать дальше, без постоянной зависимости от разработчика.</p></div>
     </section>
 
     <section class="proof" id="work">
       <div class="proof-head"><div><p class="eyebrow">02 / Моя работа</p></div><div><h2>Избранные проекты.<br><em>От идеи до системы.</em></h2><p class="proof-intro">Это только часть моих работ — клиентские системы, приложения для экспертов, собственные продукты и семейные эксперименты. Откройте любой кейс, чтобы узнать подробности.</p></div></div>
       <div class="case-list" aria-label="Избранные проекты"><details class="case">
- <summary class="case-heading"><span class="case-number">01</span><span class="case-title"><span class="case-name">Маяк</span><span class="case-type">Цифровая среда развития · клиентский проект</span></span><span class="case-short">Диагностика с ии, личный кабинет, библиотека и 30-дневный протокол. Платформа завершена и передана заказчице.</span><span class="case-plus" aria-hidden="true"></span></summary>
- <div class="case-body"><div class="case-text"><p><strong>Что сделала:</strong> спроектировала архитектуру и реализовала цифровую среду развития: диагностические тесты, обработку результатов с помощью ии, личный кабинет, библиотеку материалов и 30-дневный протокол.</p><p><strong>Технологическая основа:</strong> российские облачные сервисы. Платформа завершена, передана Лене и встроена ею в более широкую систему. После передачи заказчица смогла продолжить развитие и менять оформление самостоятельно. Методология проекта принадлежит заказчице.</p><blockquote class="case-quote">«Для меня эта система, которую сейчас ты собрала, она максимально прозрачная.»<cite>Лена · заказчица «Маяка»</cite></blockquote><p class="case-intro-gallery">Авторский интерфейс платформы.</p></div><div class="case-gallery" aria-label="Реальные экраны цифровой платформы Маяк">
+ <summary class="case-heading"><span class="case-number">01</span><span class="case-title"><span class="case-name">Маяк</span><span class="case-type">Цифровая среда развития · клиентский проект</span></span><span class="case-short">Диагностика с ИИ, личный кабинет, библиотека и 30-дневный протокол. Платформа завершена и передана заказчице.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p><strong>Что сделала:</strong> спроектировала архитектуру и реализовала цифровую среду развития: диагностические тесты, обработку результатов с помощью ИИ, личный кабинет, библиотеку материалов и 30-дневный протокол.</p><p><strong>Технологическая основа:</strong> российские облачные сервисы. Платформа завершена, передана Лене и встроена ею в более широкую систему. После передачи заказчица смогла продолжить развитие и менять оформление самостоятельно. Методология проекта принадлежит заказчице.</p><blockquote class="case-quote">«Для меня эта система, которую сейчас ты собрала, она максимально прозрачная.»<cite>Лена · заказчица «Маяка»</cite></blockquote><p class="case-intro-gallery">Авторский интерфейс платформы.</p></div><div class="case-gallery" aria-label="Реальные экраны цифровой платформы Маяк">
  <div class="case-shot case-shot--desktop"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/dashboard-desktop.png" alt="Личный кабинет платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Личный кабинет<span aria-hidden="true"></span></span></div>
  <div class="case-shot case-shot--desktop"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/protocol-desktop.png" alt="30-дневный протокол платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">30-дневный протокол<span aria-hidden="true"></span></span></div>
  <div class="case-shot case-shot--desktop"><span class="case-shot__frame"><span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><small>Маяк · интерфейс</small></span><img src="assets/cases/mayak/test-intro-desktop.png" alt="Диагностика: начало теста платформы «Маяк»" loading="lazy" decoding="async"></span><span class="case-shot__label">Диагностика: начало теста<span aria-hidden="true"></span></span></div>
@@ -272,12 +278,12 @@
 <div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/ksenia/mandalas-dark.webp" alt="Реальный экран теста: восемь мандал на тёмном фоне" loading="lazy" decoding="async"></span><span class="case-shot__label">Выбор мандалы · тёмная версия<span aria-hidden="true"></span></span></div></div></div>
   </details>
 <details class="case">
- <summary class="case-heading"><span class="case-number">04</span><span class="case-title"><span class="case-name">БК Главбух</span><span class="case-type">Цифровая система эксперта · клиентский проект</span></span><span class="case-short">Для бухгалтерского проекта Гули — концепция, сайт, лид-магнит и интерактивный календарь.</span><span class="case-plus" aria-hidden="true"></span></summary>
- <div class="case-body"><div class="case-text"><p>Работала с проектом «БК Главбух» как с системой: от концепции до цифровых инструментов. Создала сайт, лид-магнит и календарь — решения, которые заказчица применяла в своей работе.</p><p>Это не набор несвязанных страниц, а разные точки взаимодействия аудитории с экспертом.</p></div></div>
+ <summary class="case-heading"><span class="case-number">04</span><span class="case-title"><span class="case-name">От наставничества к цифровым продуктам</span><span class="case-type">Гуля · БК Главбух · клиентский проект</span></span><span class="case-short">Мы с Гулей работаем много лет. Я помогала ей с соцсетями, создала сайт компании, а позже — интерактивные инструменты и концепцию её нового позиционирования.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>Мы с Гулей сотрудничаем много лет. Начали с соцсетей, а затем я создала для её бухгалтерского бизнеса сайт и несколько цифровых продуктов. Всё это время наши профессиональные отношения развивались: я помогала Гуле с её проектами, а сама пользовалась услугами БК Главбух и рекомендую её компанию.</p><p class="case-intro-gallery">Восемь направлений работы</p><p>Наставничество · Сайт на Tilda · Краш-тест · Налоговый календарь · Чат-бот · Концепция · Бухгалтерский гороскоп · Сайт Сони.</p></div><div class="case-gallery case-gallery--vedi-rail" aria-label="Настоящие экраны работ"><div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/vedi-updates/tilda.webp" alt="Сайт БК Главбух" loading="lazy"></span><span class="case-shot__label">Сайт БК Главбух</span></div><div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/vedi-updates/crash.webp" alt="Краш-тест бизнеса" loading="lazy"></span><span class="case-shot__label">Краш-тест бизнеса</span></div><div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/vedi-updates/calendar.webp" alt="Налоговый календарь" loading="lazy"></span><span class="case-shot__label">Налоговый календарь</span></div><div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/vedi-updates/concept.webp" alt="Концепция для Гули" loading="lazy"></span><span class="case-shot__label">Концепция для Гули</span></div><div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/vedi-updates/horoscope.webp" alt="Бухгалтерский гороскоп" loading="lazy"></span><span class="case-shot__label">Бухгалтерский гороскоп</span></div><div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/vedi-updates/sonya.webp" alt="Сайт Сони" loading="lazy"></span><span class="case-shot__label">Сайт Сони</span></div></div><blockquote class="case-quote">«Вот смотрю и любуюсь 😍 как же здорово, что мы нашли тебя ❤️»<cite>Гуля · БК Главбух</cite></blockquote></div>
  </details>
 <details class="case">
- <summary class="case-heading"><span class="case-number">05</span><span class="case-title"><span class="case-name">Clover Voice</span><span class="case-type">Концепция и цифровая воронка · клиентский проект</span></span><span class="case-short">Для Светы — концепция проекта, сайт и собранная воронка взаимодействия с аудиторией.</span><span class="case-plus" aria-hidden="true"></span></summary>
- <div class="case-body"><div class="case-text"><p>После работы с опытом и замыслом Светы оформила концепцию проекта и превратила её в цифровое представление и воронку. Концепция здесь стала основой для взаимосвязанных инструментов, а не отдельным документом.</p></div></div>
+ <summary class="case-heading"><span class="case-number">05</span><span class="case-title"><span class="case-name">Clover Voice</span><span class="case-type">Концепция и программа · клиентский проект</span></span><span class="case-short">Я помогла Свете сформулировать программу «На сцену за 60 дней», создала концепцию и сайт с переходом в Telegram-бота.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>Мы со Светой начали с навигационной сессии. Я помогла ей сформулировать позиционирование, собрала концепцию школы и оформила её как сайт.</p><p>Света использовала концепцию в работе с ChatGPT и получила план ведения соцсетей.</p><p>Затем мы сформулировали программу «На сцену за 60 дней». Я создала для неё отдельный сайт с переходом в Telegram-бота.</p></div><div class="case-gallery" aria-label="Настоящие экраны работ"><div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/vedi-updates/clover-concept.webp" alt="Сайт-концепция Clover Voice" loading="lazy"></span><span class="case-shot__label">Сайт-концепция Clover Voice</span></div><div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/vedi-updates/clover-program.webp" alt="Программа «На сцену за 60 дней»" loading="lazy"></span><span class="case-shot__label">Программа «На сцену за 60 дней»</span></div></div></div>
  </details>
 <details class="case">
  <summary class="case-heading"><span class="case-number">06</span><span class="case-title"><span class="case-name">Весёлые Знания</span><span class="case-type">Для детей · авторская семейная игра</span></span><span class="case-short">Семейная викторина с заданиями для 4-го класса и подготовки к ВПР.</span><span class="case-plus" aria-hidden="true"></span></summary>
@@ -286,14 +292,14 @@
 <div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/veselye-znaniya/question.jpg" alt="Игровой вопрос по арифметике с вариантами ответов" loading="lazy" decoding="async"></span><span class="case-shot__label">Как выглядит игра</span></div></div></div>
  </details>
 <details class="case">
- <summary class="case-heading"><span class="case-number">07</span><span class="case-title"><span class="case-name">Оскар</span><span class="case-type">Собственный продукт · ии-агент для контента</span></span><span class="case-short">Развивающийся ии-агент: контент, короткие видео, карусели и рабочая память.</span><span class="case-plus" aria-hidden="true"></span></summary>
- <div class="case-body"><div class="case-text"><p>Разрабатываю собственного ии-агента для работы с контентом. В экспериментальных версиях тестирую обработку вертикальных видео, карусели и систему памяти.</p><p>Это развивающийся авторский продукт, а не завершённое массовое внедрение.</p></div></div>
+ <summary class="case-heading"><span class="case-number">07</span><span class="case-title"><span class="case-name">Оскар</span><span class="case-type">Собственный продукт · ИИ-агент для контента</span></span><span class="case-short">Я создала Оскара, чтобы передавать повторяющуюся работу с контентом настроенному ИИ-агенту — от разбора материалов до постов, сценариев и видео.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>Я создала Оскара, чтобы передать ИИ повторяющуюся работу с контентом. Он разбирает голосовые, видео и документы, готовит посты, сценарии, карусели и монтирует короткие ролики с субтитрами.</p><p>Оскар работает через Telegram. Я настраиваю его под конкретные задачи. Сейчас версию 0.1.5 тестирует фокус-группа.</p></div><div class="case-gallery" aria-label="Настоящие экраны работ"><div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/vedi-updates/oskar.webp" alt="Настоящий экран Оскара в Telegram" loading="lazy"></span><span class="case-shot__label">Настоящий экран Оскара в Telegram</span></div></div></div>
  </details>
 <details class="case">
- <summary class="case-heading"><span class="case-number">08</span><span class="case-title"><span class="case-name">Студия каруселей</span><span class="case-type">Собственный продукт · работающий пилот</span></span><span class="case-short">Редактор, в котором можно собрать карусель из собственных фотографий и текста.</span><span class="case-plus" aria-hidden="true"></span></summary>
- <div class="case-body"><div class="case-text"><p>Создала интерактивную студию для визуальных публикаций: можно загрузить свои фото, добавить текст, отредактировать слайды и выгрузить результат.</p><a class="case-action" href="https://irinavedipro.github.io/carousel-studio-live-9f7k2m/?release=26" target="_blank" rel="noopener noreferrer">Открыть работающий пилот →</a></div></div>
+ <summary class="case-heading"><span class="case-number">08</span><span class="case-title"><span class="case-name">Студия каруселей</span><span class="case-type">Собственный продукт · бесплатный редактор</span></span><span class="case-short">Я создала бесплатный редактор, в котором можно собрать карусель из собственных фотографий и текста.</span><span class="case-plus" aria-hidden="true"></span></summary>
+ <div class="case-body"><div class="case-text"><p>Я создала инструмент, в котором можно собрать карусель, настроить оформление и сохранить готовые слайды.</p><p>Работает прямо в браузере, без регистрации.</p><a class="case-action" href="https://irinavedipro.github.io/carousel-studio-live-9f7k2m/?release=26" target="_blank" rel="noopener noreferrer">Попробовать бесплатно →</a></div><div class="case-gallery" aria-label="Настоящие экраны работ"><div class="case-shot case-shot--phone"><span class="case-shot__frame"><span class="phone-speaker" aria-hidden="true"></span><img src="assets/cases/vedi-updates/studio.webp" alt="Студия каруселей — бесплатный пилот" loading="lazy"></span><span class="case-shot__label">Студия каруселей — бесплатный пилот</span></div></div></div>
  </details></div>
-      <div class="proof-foot"><p>Разные задачи — один принцип: соединить опыт человека с возможностями ии и довести замысел до работающего решения.</p><a class="small-link" href="#contact">Обсудить сотрудничество</a></div>
+      <div class="proof-foot"><p>Разные задачи — один принцип: соединить опыт человека с возможностями ИИ и довести замысел до работающего решения.</p><a class="small-link" href="#contact">Обсудить сотрудничество</a></div>
     </section>
 
     <section class="voices" id="voices" aria-labelledby="voices-title">
@@ -326,7 +332,7 @@
        {tag:"Система для эксперта"},
        {tag:"Концепция и цифровая воронка"},
        {tag:"Обучающая игра"},
-       {tag:"Авторский ии-агент"},
+       {tag:"Авторский ИИ-агент"},
        {tag:"Редактор каруселей"}
      ];
      const projectCtas = [
@@ -336,7 +342,7 @@
        {title:"Собрать цифровую систему",desc:"Соединим нужные инструменты вокруг вашей практики."},
        {title:"Продумать свою цифровую воронку",desc:"Обсудим путь знакомства и взаимодействия с вашей аудиторией."},
        {title:"Создать своё приложение",desc:"Воплотим вашу идею в удобный цифровой формат."},
-       {title:"Обсудить своего ии-агента",desc:"Найдём задачу, где ии станет полезной частью системы."},
+       {title:"Обсудить своего ИИ-агента",desc:"Найдём задачу, где ИИ станет полезной частью системы."},
        {title:"Создать свой цифровой продукт",desc:"Обсудим инструмент для ваших материалов и процессов."}
      ];
     function makeSlider(items,className,createCard,ariaLabel) {
