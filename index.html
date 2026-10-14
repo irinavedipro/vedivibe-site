@@ -206,6 +206,29 @@
     .portfolio-modal .case-gallery--vedi-rail .case-shot--phone{flex:0 0 190px;width:190px;margin:0;max-width:none;scroll-snap-align:start}
     .portfolio-modal .case-gallery--vedi-rail .case-shot img{height:260px;object-fit:cover;object-position:top}
     @media(max-width:700px){.portfolio-modal .case-gallery--vedi-rail .case-shot--phone{flex-basis:170px;width:170px}}
+
+    /* Утверждённые 14.10.2026 микроправки: только кнопки кейсов и раздел способа работы. */
+    .portfolio-card__more{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;margin-top:auto;padding:10px 13px;border:1px solid #b69f93;border-radius:999px;color:#493b37;background:transparent;font:400 17px/1.15 Georgia,serif;letter-spacing:-.025em;text-transform:none}
+    .portfolio-card__more-plus{width:29px;height:29px;display:inline-grid;place-items:center;flex:none;border:1px solid #b69f93;border-radius:8px;color:#9b6457;font:400 24px/1 Georgia,serif}
+    .bridge{padding:76px clamp(25px,5vw,76px) 79px}
+    .bridge h2{margin-bottom:22px}
+    .bridge .approach-principle{font-size:13px;font-weight:600;color:#584842;margin:0 0 21px;line-height:1.4}
+    .approach-steps{display:grid;grid-template-columns:1fr 1fr;column-gap:34px;row-gap:19px}
+    .approach-step{min-width:0;display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;padding:12px 0 0;border-top:1px solid #bdafa3}
+    .approach-step-num{font:400 16px/1.2 Georgia,serif;color:#a1695f}
+    .approach-step h3{font:400 20px/1.2 Georgia,serif;letter-spacing:-.02em;margin:0 0 6px}
+    .bridge .approach-step p{font-size:13px;line-height:1.44;color:#5b514c;margin:0}
+    @media(max-width:900px){.bridge{grid-template-columns:1fr;gap:15px}}
+    @media(max-width:700px){
+      .bridge{padding:34px 25px 36px;gap:0}
+      .bridge .eyebrow{margin:0 0 17px}
+      .bridge h2{font-size:clamp(35px,9.3vw,41px);margin:0 0 15px}
+      .bridge .approach-principle{font-size:13px;margin:0 0 14px}
+      .approach-steps{grid-template-columns:1fr;gap:0}
+      .approach-step{padding:10px 0 9px;grid-template-columns:29px minmax(0,1fr);gap:9px}
+      .approach-step h3{font-size:19px;margin-bottom:4px}
+      .bridge .approach-step p{font-size:14px;line-height:1.43}
+    }
   </style>
 </head>
 <body>
@@ -236,7 +259,16 @@
 
     <section class="bridge" id="approach">
       <p class="eyebrow">01 / Мой способ работы</p>
-      <div><h2>Система, которая<br><em>остаётся вашей.</em></h2><div class="mobile-approach-context"><p>Для экспертов и предпринимателей создаю платформы, приложения и ИИ-агентов.</p><p><strong>Мой подход — партнёрство человека с ИИ.</strong> От концепции до работающего решения.</p></div><p>Я начинаю с вашего опыта, идей и задач: разрабатываю концепцию, продумываю архитектуру и объединяю цифровые инструменты в работающую систему. Мне важно, чтобы она была красивой, удобной и понятной — и чтобы после завершения нашей работы вы могли самостоятельно ею управлять и развивать дальше, без постоянной зависимости от разработчика.</p></div>
+      <div class="approach-content">
+        <h2>Система, которая<br><em>остаётся вашей.</em></h2>
+        <p class="approach-principle">Партнёрство человека и ИИ.</p>
+        <div class="approach-steps">
+          <div class="approach-step"><span class="approach-step-num" aria-hidden="true">01</span><div><h3>Обсуждаем запрос</h3><p>Проясняем задачу, даже если пока нет чёткой формулировки.</p></div></div>
+          <div class="approach-step"><span class="approach-step-num" aria-hidden="true">02</span><div><h3>Собираем основу</h3><p>Опираюсь на ваш опыт и материалы, если они есть. Уточняю главное.</p></div></div>
+          <div class="approach-step"><span class="approach-step-num" aria-hidden="true">03</span><div><h3>Я создаю решение</h3><p>Разрабатываю концепцию и воплощаю её с помощью ИИ — чтобы решение работало, было удобным и красивым.</p></div></div>
+          <div class="approach-step"><span class="approach-step-num" aria-hidden="true">04</span><div><h3>Показываю и передаю</h3><p>Прототип или готовый продукт: сайт, приложение, платформа, брендбук или ИИ-агент. После передачи вы управляете им и развиваете сами.</p></div></div>
+        </div>
+      </div>
     </section>
 
     <section class="proof" id="work">
@@ -309,7 +341,9 @@
         <figure class="voice"><blockquote>«Я уже использовала приложение в нетворкинге и хочу сказать , что это вызывает большой интерес и вовлекает гораздо лучше.»</blockquote><figcaption>Ксения · коуч, визуальный тест для нетворкинга</figcaption></figure>
         <figure class="voice"><blockquote>«То есть для меня эта система, которую сейчас ты собрала, она максимально прозрачная.»</blockquote><figcaption>Лена · заказчица цифровой платформы «Маяк»</figcaption></figure>
         <figure class="voice"><blockquote>«Я сама на своём телефоне создала нужную автоматизацию и теперь смогу это делать сама».</blockquote><figcaption>Наталья · эксперт, настройка автоматизации</figcaption></figure>
-         <figure class="voice"><blockquote>«Появилось мини-апп - теперь это легко.»</blockquote><figcaption>Антон · маркетолог по трафику, калькулятор окупаемости</figcaption></figure>
+         <figure class="voice"><blockquote>«Сделала мини-апп под мои запросы, хотя было скомканное ТЗ — все выдержала и мы дошли до результата.»</blockquote><figcaption>Антон · маркетолог по трафику, калькулятор окупаемости</figcaption></figure>
+        <figure class="voice"><blockquote>«И всё так приятно, уютно, понятно, лаконично. Вот, собственно, как я и хотела.»</blockquote><figcaption>Лена · заказчица цифровой платформы «Маяк»</figcaption></figure>
+        <figure class="voice"><blockquote>«Благодарю за возможность так легко и быстро реализовать идею.»</blockquote><figcaption>Ксения · коуч, визуальный тест для нетворкинга</figcaption></figure>
       </div>
     </section>
 
@@ -433,7 +467,7 @@
        tag.className="portfolio-card__category";tag.textContent=cover.tag;
        heading.className="portfolio-card__title";heading.textContent=project.querySelector(".case-name")?.textContent||"Проект";
        description.className="portfolio-card__desc";description.textContent=project.querySelector(".case-short")?.textContent||"";
-       link.className="portfolio-card__more";link.textContent="Смотреть кейс →";
+       link.className="portfolio-card__more";link.textContent="Открыть кейс";const morePlus=document.createElement("span");morePlus.className="portfolio-card__more-plus";morePlus.setAttribute("aria-hidden","true");morePlus.textContent="+";link.append(morePlus);
        copy.append(number,tag,heading,description,link);button.append(copy);
        button.addEventListener("click",e=>openProject(project,button,e.detail===0));
        return button;
