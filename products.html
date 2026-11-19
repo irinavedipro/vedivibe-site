@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="theme-color" content="#2f2526">
-<meta name="description" content="Два авторских направления Веди Вайб: единая визуальная система проекта и Искусство видеть.">
+<meta name="description" content="Три авторских направления Веди Вайб: Единая визуальная система проекта, Искусство видеть и Оскар 0.2 — ИИ-помощник для контента.">
 <title>Продукты · Веди Вайб</title>
 <style>
 :root{--ink:#302629;--wine:#2f2526;--paper:#f2eee7;--cream:#faf7f1;--muted:#776c69;--line:#c9beb5;--coral:#d87967}
@@ -28,17 +28,31 @@ main{padding:clamp(60px,8vw,105px) clamp(24px,5vw,76px) 110px;flex:1}.eyebrow{ma
 @media(max-width:365px){.topbar .nav a{padding:0 4px}}
 .money-research{font:400 clamp(16px,1.7vw,20px)/1.25 Georgia,serif;white-space:normal}
 @media(max-width:650px){.money-research{font-size:18px}}
+/* Третья карточка: три колонки только на широком экране. */
+@media(min-width:1101px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.product{min-height:455px;padding:30px}.product h2{font-size:clamp(35px,3vw,48px)}}
+/* При двух колонках третья карточка по центру, без пустого несимметричного угла. */
+@media(min-width:651px) and (max-width:1100px){.cards>.product:nth-child(3){grid-column:1/-1;width:calc(50% - 8px);justify-self:center}}
+
+/* Кнопка взята из главной страницы vedivibe.ru: .button (коралловый прямоугольник, тёмный текст). */
+.product .detail{border-top:1px solid #cbbcb2;padding-top:18px;margin-top:auto;display:block}
+.product .card-action{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;text-align:center;width:auto;min-width:195px;min-height:50px;gap:34px;padding:16px 19px;border:1px solid var(--coral);border-radius:0;background:var(--coral);color:#241d1d;font:700 12px/1.4 "Segoe UI",Arial,sans-serif;letter-spacing:.02em;text-decoration:none;transition:background .2s,transform .2s}
+.product .card-action::after{content:none}
+.product:hover .card-action,.product:focus-visible .card-action{background:#efa38d;border-color:var(--coral);box-shadow:none;transform:translateY(-2px)}
+@media(max-width:420px){.product .card-action{width:100%;min-width:0}}
+@media(prefers-reduced-motion:reduce){.product .card-action{transition:none;transform:none}}
+
 </style>
 <link rel="canonical" href="https://vedivibe.ru/products.html">
 </head>
 <body><div class="shell">
 
 <header class="topbar"><a class="brand" href="https://vedivibe.ru/" aria-label="Веди Вайб — на главную страницу"><span>Веди Вайб</span><svg viewBox="0 0 110 110" aria-hidden="true"><path d="M55 52 C50 45 41 48 40 55 C38 64 48 71 59 67 C73 62 76 46 67 34 C56 19 35 21 23 34 C9 50 14 75 32 86 C54 100 80 87 90 66" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><nav class="nav" aria-label="Навигация"><a href="https://vedivibe.ru/">Главная</a><a href="products.html" class="active" aria-current="page">Продукты</a><a href="https://t.me/vedi_irina" target="_blank" rel="noopener noreferrer">Связаться</a></nav></header>
-<main><div class="intro"><div><p class="eyebrow">Веди Вайб · Авторские продукты</p><h1>Продукты<em>.</em></h1></div><p>Два способа создавать больше своего: придать проекту узнаваемый образ или открыть новые возможности собственного видения и творчества.</p></div>
+<main><div class="intro"><div><p class="eyebrow">Веди Вайб · Авторские продукты</p><h1>Продукты<em>.</em></h1></div><p>Три направления для новых возможностей: визуальная система проекта, пространство для развития собственного видения и ИИ-помощник для контента.</p></div>
 
-<section class="cards" aria-label="Два продукта">
-<a class="product" href="products/visual-system.html" aria-label="Подробнее о Единой визуальной системе проекта"><div class="product-top"><span class="product-num">01 / Продукт</span><span class="product-type">Для проекта</span></div><h2>Единая визуальная<br>система проекта.</h2><p>Целостный образ проекта: концепция, брендборд, брендбук и прототип. Комплект, с которым можно создавать новые материалы в своём узнаваемом стиле — самостоятельно, с командой или с ИИ.</p><div class="detail"><span class="money">50 000 рублей</span><span class="card-action">Подробнее</span></div></a>
-<a class="product" href="products/art-of-seeing.html" aria-label="Подробнее об Искусстве видеть"><div class="product-top"><span class="product-num">02 / Среда развития</span><span class="product-type">Для человека</span></div><h2>Искусство<br>видеть.</h2><p>Хочется больше замечать, чувствовать и творить? Авторская онлайн-среда, где можно открывать собственный вкус, пробовать новое и встречаться с другими взглядами.</p><div class="detail"><span class="money">50 000 рублей</span><span class="card-action">Подробнее</span></div></a>
+<section class="cards" aria-label="Три продукта">
+<a class="product" href="products/visual-system.html" aria-label="Открыть страницу Единой визуальной системы проекта"><div class="product-top"><span class="product-num">01 / Продукт</span><span class="product-type">Для проекта</span></div><h2>Единая визуальная<br>система проекта.</h2><p>Целостный образ проекта: концепция, брендборд, брендбук и прототип. Комплект, с которым можно создавать новые материалы в своём узнаваемом стиле — самостоятельно, с командой или с ИИ.</p><div class="detail"><span class="card-action">Открыть страницу</span></div></a>
+<a class="product" href="products/art-of-seeing.html" aria-label="Открыть страницу Искусства видеть"><div class="product-top"><span class="product-num">02 / Среда развития</span><span class="product-type">Для человека</span></div><h2>Искусство<br>видеть.</h2><p>Хочется больше замечать, чувствовать и творить? Авторская онлайн-среда, где можно открывать собственный вкус, пробовать новое и встречаться с другими взглядами.</p><div class="detail"><span class="card-action">Открыть страницу</span></div></a>
+<a class="product" href="products/oscar.html" aria-label="Открыть страницу Оскара 0.2"><div class="product-top"><span class="product-num">03 / Продукт</span><span class="product-type">Для контента</span></div><h2>Оскар 0.2.<br>ИИ-помощник.</h2><p>Помогает экспертам и командам работать с текстами, видео, каруселями и аналитикой. Я внедряю его под ваши задачи, обучаю одного человека и сопровождаю первый месяц.</p><div class="detail"><span class="card-action">Открыть страницу</span></div></a>
 </section>
-</main><footer class="footer"><span>© Веди Вайб</span><a href="https://vedivibe.ru/">На главный сайт</a><a href="https://t.me/vedi_irina" target="_blank" rel="noopener noreferrer">Написать в Telegram</a></footer>
+</main><footer class="footer"><span>© Веди Вайб</span><a href="privacy.html">Политика персональных данных</a><a href="https://vedivibe.ru/">На главный сайт</a><a href="https://t.me/vedi_irina" target="_blank" rel="noopener noreferrer">Написать в Telegram</a></footer>
 </div></body></html>
